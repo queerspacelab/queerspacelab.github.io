@@ -69,6 +69,7 @@ export default {
     height: 15px;
     border-radius: 50%;
     transform: translate(-50%, -50%);
+    z-index: 999;
     /*box-shadow:*/
     /*    0 0 2px 2px #6c6c6c inset, !* middle magenta *!*/
     /*    0 0 5px 2px rgba(0, 255, 255, 0.66); !* outer cyan *!*/

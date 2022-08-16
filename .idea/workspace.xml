@@ -2,24 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1f3428c-7a1e-4944-b75e-2261a659467b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/css/app.4fceb727.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/MHH.9e0028aa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/MIT_Arch.920db3f5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/emerson.8c876073.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo.188b9292.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/no_trespassing.84a71fd8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/police_article.4ab761d1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/queer_turkey.aef2049c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/stud.e9ffd13b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/three_friends.3acc41d3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/wilg.13762a53.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/app.ffef09b3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/app.ffef09b3.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/chunk-vendors.bd7ad764.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/chunk-vendors.bd7ad764.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/style.css" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stud.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/app.4fceb727.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/MIT_Arch.920db3f5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/logo.188b9292.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logos/MIT_Arch.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/logos/MIT_Arch.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Column.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Column.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Paragraph.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Paragraph.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stud.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Stud.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,24 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/carbonhouse_mit/Documents/queerspacelab.github.io&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/carbonhouse_mit/Documents/queerspacelab.github.io/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm serve">
@@ -84,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660185293797</updated>
       <workItem from="1660185295234" duration="1069000" />
-      <workItem from="1660191594155" duration="821000" />
+      <workItem from="1660191594155" duration="7575000" />
     </task>
     <servers />
   </component>

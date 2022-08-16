@@ -119,31 +119,29 @@ export default {
 
 <style scoped>
   .paragraph > p {
-    font-family: "Fraunces", serif;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: var(--font-med);
     letter-spacing: -0.05rem;
     margin: 5%;
   }
+
   .paragraph {
     position: absolute;
     float: left;
-    hyphens: auto;
-    -moz-hyphens: auto;
     text-align: justify;
     color: transparent;
     text-shadow: 0 0 7px black;
-    cursor: none;
+    /*cursor: none;*/
+    cursor: pointer;
     z-index: 9;
     overflow: scroll;
-  }
-  .paragraph::-webkit-scrollbar {
-    display: none;
-  }
-
-  .paragraph {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+
+  .paragraph::-webkit-scrollbar {
+    display: none;
   }
 
   .paragraph > img {

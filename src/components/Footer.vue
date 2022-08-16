@@ -8,8 +8,12 @@
   </p>
   </div>
 <!--  <div class="img-container">-->
-  <img src="../assets/logos/MIT_Arch.png" style="filter: invert(); height: 40px;"><br>
-  <img src="../assets/logos/MHH.png" style="height: 66px;">
+  <a href="https://architecture.mit.edu/" target="_blank">
+    <img src="../assets/logos/MIT_Arch.png" style="filter: invert(); height: 40px;">
+  </a><br>
+  <a href="https://mindhandheart.mit.edu/" target="_blank">
+    <img src="../assets/logos/MHH.png" style="height: 66px;">
+  </a>
 <!--  </div>-->
 </div>
 </template>

@@ -75,6 +75,7 @@ export default {
 
 <style scoped>
 .column {
+  font-family: "IBM Plex Mono", serif;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -93,10 +94,11 @@ export default {
 }
 
 .column > p {
+  font-family: "IBM Plex Mono", serif;
   margin: 30px;
   font-size: 1.5rem;
-  font-family: "IBM Plex Mono",serif;
   font-weight: 300;
+  letter-spacing: -0.05rem;
   color: #1c1c1c;
   text-shadow: 0 0 7px #4b4b4b;
 }

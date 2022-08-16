@@ -25,14 +25,14 @@ body {
           21px 21px 75px rgba(0, 0, 0, 0.22);
   --font-biggest: 2.4rem;
   --font-big: 1.8rem;
-  --font-med: 0.9rem;
+  --font-med: 1.1rem;
   --font-small: 0.6rem;
   --border: 1px solid #757575;
   --border-dashed: 2px dashed #757575;
 }
 
 h1 {
-  font-family: "IBM Plex Mono", serif;
+  font-family: "Fraunces", Serif;
   font-size: var(--font-biggest);
   letter-spacing: 0;
   font-weight: 500;
@@ -41,16 +41,21 @@ h1 {
 
 h2 {
   font-family: "IBM Plex Mono", monospace;
-  font-size: var(--font-med);
-  font-weight: 500;
-  margin: 15px;
+  font-size: var(--font-big);
+  font-weight: 400;
+  margin: 30px;
 }
 
 p {
+  font-family: "IBM Plex Mono", monospace;
   font-size: var(--font-med);
   margin: 15px;
   letter-spacing: -0.045rem;
   text-align: justify;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .full-bleed{
