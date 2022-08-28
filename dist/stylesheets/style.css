@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,600');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,300,400,500');
 @import url('https://fonts.googleapis.com/css?family=Fraunces:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,300,400,500,600,700');
 
 html {
   margin: 0;
-  font-family: "IBM Plex Mono", monospace;
+  /*font-family: "IBM Plex Mono", monospace;*/
   font-weight: 400;
   font-size: 12px;
   text-rendering: optimizeLegibility;
@@ -14,28 +14,29 @@ html {
 
 body {
   margin: 0 auto;
+  background: #757575;
 }
 
 :root {
   --shadow:
           0.7px 0.7px 10.5px rgba(0, 0, 0, 0.07),
           1.8px 1.8px 18.9px rgba(0, 0, 0, 0.10),
-          3.7px 3.7px 26.8px rgba(0, 0, 0, 0.12),
-          7.7px 7.7px 37.9px rgba(0, 0, 0, 0.15),
-          21px 21px 75px rgba(0, 0, 0, 0.22);
-  --font-biggest: 2.4rem;
-  --font-big: 1.8rem;
-  --font-med: 1.1rem;
+          3.7px 3.7px 26.8px rgba(0, 0, 0, 0.12);
+          /*7.7px 7.7px 37.9px rgba(0, 0, 0, 0.15),*/
+          /*21px 21px 75px rgba(0, 0, 0, 0.22);*/
+  --font-biggest: 2.8rem;
+  --font-big: 1.7rem;
+  --font-med: 1.2rem;
   --font-small: 0.6rem;
   --border: 1px solid #757575;
   --border-dashed: 2px dashed #757575;
 }
 
 h1 {
-  font-family: "Fraunces", Serif;
+  font-family: "IBM Plex Mono", monospace;
   font-size: var(--font-biggest);
   letter-spacing: 0;
-  font-weight: 500;
+  font-weight: 600;
   margin: 30px;
 }
 
@@ -43,7 +44,7 @@ h2 {
   font-family: "IBM Plex Mono", monospace;
   font-size: var(--font-big);
   font-weight: 400;
-  margin: 30px;
+  margin-left: 30px;
 }
 
 p {
@@ -63,31 +64,48 @@ p {
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
-
 }
+
+.page-full{
+  position: absolute;
+  background: white;
+  left: 20%;
+  min-width: 600px;
+  width: 60%;
+  min-height: 100%;
+  z-index: 10;
+  box-shadow: var(--shadow);
+}
+
+.page-full > h1 {
+  margin: 50px;
+}
+.page-full > p {
+  margin: 50px;
+}
+
+
 
 /*Vue transition*/
-/*zoom*/
+/*slide*/
 
-.zoom-enter-active,
-.zoom-leave-active {
-  animation-duration: 150ms;
+.slide-enter-active,
+.slide-leave-active {
+  animation-duration: 500ms;
   animation-fill-mode: both;
-  animation-name: zoom;
+  animation-name: slide;
 }
 
-.zoom-leave-active {
+.slide-leave-active {
   animation-direction: reverse;
 }
 
-@keyframes zoom {
+@keyframes slide {
   from {
-    opacity: 0;
-    transform: translateX(-50%) scale(0.3);
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(-50%) scale(1);
-    opacity: 1;
+    transform: none;
   }
 }
 

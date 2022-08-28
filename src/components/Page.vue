@@ -88,9 +88,9 @@ export default {
     this.ww = window.innerWidth;
   },
   methods: {
-    getImage(path){
-      return require('../assets/images/' + path);
-    },
+    // getImage(path){
+    //   return require('../assets/images/' + path);
+    // },
     emitClickedIndex(i) {
       this.$emit("expandedPage", i);
     },
@@ -99,7 +99,7 @@ export default {
 </script>
 
 <style scoped>
-  >>> p {
+  :deep() p {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-size: var(--font-med);
@@ -122,7 +122,7 @@ export default {
     overflow-x: visible;
   }
 
-  >>> img {
+  :deep() img {
     position: relative;
     align-self: center;
     max-width: calc(100% - 30px);
@@ -136,7 +136,7 @@ export default {
     text-shadow: 0 0 8px #444;
   }
 
-  .page:hover >>> img {
+  .page:hover :deep() img {
     filter: grayscale(0%) contrast(100%) brightness(100%);
   }
 
