@@ -11,8 +11,9 @@ Vue.use(VueCookie);
 
 export const router = new VueRouter({
   routes: [
-    { path: "/", component: Home, props: true },
-  ]
+    { path: "/", component: Home, props: true, name: 'home'},
+    { path: "/:page", component: Home, props: true, name: 'page'}
+  ],
 });
 
 new Vue({

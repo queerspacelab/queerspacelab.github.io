@@ -33,17 +33,17 @@
 <!--      egestas ipsum non, viverra risus.-->
 <!--    </p>-->
     <img v-if="index === 1" alt=""
-         src="../assets/images/emerson.jpg">
+         src="../../public/images/emerson.jpg">
     <img v-if="index === 2" alt=""
-         src="../assets/images/no_trespassing.jpg" >
+         src="../../public/images/no_trespassing.jpg" >
     <img v-if="index === 3" alt=""
-         src="../assets/images/police_article.jpg" >
+         src="../../public/images/police_article.jpg" >
     <img v-if="index === 4" alt=""
-         src="../assets/images/queer_turkey.png" >
+         src="../../public/images/queer_turkey.png" >
     <img v-if="index === 5" alt=""
-         src="../assets/images/three_friends.jpg" >
+         src="../../public/images/three_friends.jpg" >
     <img v-if="index === 6" alt=""
-         src="../assets/images/wilg.jpg" >
+         src="../../public/images/wilg.jpg" >
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a augue imperdiet, dapibus nisl
       sit amet, pulvinar magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
@@ -80,7 +80,7 @@ export default {
   display: flex;
   flex-direction: column;
   /*background: #FF5800;*/
-  background: rgba(245, 245, 245, 0.5);
+  background: rgba(245, 245, 245, 1);
   width: 600px;
   left: 50%;
   top: 10%;
@@ -106,6 +106,6 @@ export default {
 .column > img {
   width: calc(100% - 60px);
   margin: 0 auto;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
 }
 </style>

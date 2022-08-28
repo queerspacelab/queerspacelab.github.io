@@ -1,7 +1,12 @@
 <template>
-  <div class="pointer" ref="pointer"
-      :style="{ left: x,
-                top: y}">
+  <div id="magnifying-glass" class="pointer" ref="pointer"
+      :style="{ left: x + 'px',
+                top: y + 'px'}"
+       @mousedown="moveActive=true"
+       @mousemove="moveXY($event)"
+       @mouseup="moveActive=false"
+       @mouseleave="moveActive=false"
+  >
     <span></span>
   </div>
 </template>
@@ -10,25 +15,52 @@
 export default {
   name: "MagnifyingGlass",
   props: {
-    x: String,
-    y: String,
+    x_init: Number,
+    y_init: Number,
+  },
+  data() {
+    return {
+      moveActive: false,
+      x: 0,
+      y: 0,
+    }
+  },
+  methods: {
+    moveXY(e){
+      if(this.moveActive) {
+        e.preventDefault();
+        this.x += e.movementX
+        this.y += e.movementY
+      }
+    }
+  },
+  watch: {
+    x_init: function(x) {
+      this.x = x;
+    },
+    y_init: function(y) {
+      this.y = y;
+    }
   },
   mounted() {
+    // this.x = this.x_init;
+    // this.y = this.y_init;
+    // console.log("this.x: ", this.x)
   }
 }
 </script>
 
 <style scoped>
-  .pointer {
-    float: left;
+  #magnifying-glass {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 250px;
+    height: 250px;
     transform: translate(-50%,-50%);
-    fill: white;
-    /*opacity: 0.5;*/
+    background: white;
+    opacity: 0.8;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 0.5px solid black;
+    cursor: move;
     z-index: 999;
   }
 </style>

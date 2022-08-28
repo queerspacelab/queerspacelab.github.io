@@ -1,15 +1,13 @@
 <template>
-  <div class="stud"
+  <router-link to="/" class="stud"
        :style="{left: x + '%', top: y + '%'}">
-    <img src="../assets/stud.png">
-  </div>
+    <img src="../../assets/stud.png">
+  </router-link>
 </template>
 
 <script>
-// import * as d3 from "d3";
-
 export default {
-  name: "Studs",
+  name: "Stud",
   props: {
     x: Number,
     y: Number,
@@ -39,9 +37,6 @@ export default {
   //     }
   //   }
   // },
-  mounted() {
-    // this.renderStuds();
-  },
 
 }
 </script>
@@ -63,6 +58,7 @@ export default {
   /*  width: 100%;*/
   /*  height: 100%;*/
   /*}*/
+
   .stud {
     position: absolute;
     width: 15px;
@@ -70,12 +66,15 @@ export default {
     border-radius: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
+    font-size: 1.5rem;
+    cursor: default;
+
     /*box-shadow:*/
     /*    0 0 2px 2px #6c6c6c inset, !* middle magenta *!*/
     /*    0 0 5px 2px rgba(0, 255, 255, 0.66); !* outer cyan *!*/
   }
   .stud > img {
-    width: 100%;
+    width: 70%;
   }
   /*.stud-overlay {*/
   /*  width: 12px;*/

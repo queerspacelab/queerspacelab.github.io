@@ -1,95 +1,107 @@
 <template>
-  <div id="home" class="full-bleed">
-<!--    <div id="column-left"-->
-<!--    :style="{width: 100-rightColumnWidth + '%', height: '100vh'}">-->
-<!--&lt;!&ndash;      <img src="../assets/logos/logo.png" style="width: 130%; top: 10%; position: relative; margin: 50px">&ndash;&gt;-->
-<!--    </div>-->
+  <div id="app" class="full-bleed">
+    <menu-bar/>
+    <transition name="slide">
+      <about v-if="$route.params.page === 'about'" />
+      <acknowledgement v-if="$route.params.page === 'acknowledgment'" />
+      <future v-if="$route.params.page === 'future-visions'" />
+      <team v-if="$route.params.page === 'team'" />
+    </transition>
     <stud v-for="(xy, i) in logoCoor"
           class="stud-logo"
-          :key="i"
-          :x="xy[0]*2500 /ww"
-          :y="xy[1]*2500 /wh" />
-    <paragraph v-for="i in 6"
-               @showColumn="showColumnFunc($event)"
-               @showMagnifyingGlass="showMagnifyingGlassFunc($event)"
-               @mouseXY = "mouseXYFunc($event)"
-               :key="i"
+          :key="'stud'+i"
+          :x="xy[0]*2000 /ww - 2.5"
+          :y="xy[1]*2000 /wh - 2" />
+<!--    <Transition-->
+<!--        @enter="slidePage()"-->
+<!--    >-->
+<!--    <transition name="slide">-->
+    <paragraph v-for="(content, i) in contents"
+               @expandedPage="expandedPageFunc($event)"
+               :key="'page'+i"
                :index="i"
-               :top-left="[100-margin-i*rightColumnWidth/6, margin*2]"
-               :top-right="[100-margin-(i-1)*rightColumnWidth/6, margin*2]"
-               :bottom-left="[100-margin-i*(rightColumnWidth/6 - 1), 55-margin/4]"
-               :bottom-right="[100-margin-(i-1)*(rightColumnWidth/6 - 1), 55-margin/4]"/>
-    <paragraph v-for="i in [7,8,9,10,11,12]"
-               @showColumn="showColumnFunc($event)"
-               @showMagnifyingGlass="showMagnifyingGlassFunc($event)"
-               @mouseXY = "mouseXYFunc($event)"
-               :key="i"
-               :index="i"
-               :top-left="[100-margin-(i-6)*(rightColumnWidth/6 - 1), 55+margin/4]"
-               :top-right="[100-margin-(i-7)*(rightColumnWidth/6 - 1), 55+margin/4]"
-               :bottom-left="[100-margin-(i-6)*(rightColumnWidth/6 - 0.5), 100-margin*2]"
-               :bottom-right="[100-margin-(i-7)*(rightColumnWidth/6 - 0.5), 100-margin*2]"/>
-<!--    <magnifying-glass-->
-<!--        v-if="showMagnifyingGlass"-->
-<!--        :x="mouseX"-->
-<!--        :y="mouseY" />-->
+               :isActive="i === expandedPage"
+               :title_short="content.title_short"
+               :author="content.author"
+               :content="content.content"
+               :img="content.img"
+               :left="showPage ? 100-margin-(i+1) : 100-margin-(i+1)*(rightColumnWidth-margin)/6"
+               :width="showPage ? 1 : (rightColumnWidth-margin)/6"/>
+<!--    </transition>-->
+    <magnifying-glass
+        :x_init="ww * ((rightColumnWidth - margin) / 100 * Math.random() + 1 - rightColumnWidth/100)"
+        :y_init="wh * Math.random()" />
 
-    <stud v-for="i in 7"
-          :key="'row1-'+i"
-          :x="100-margin-(i-1)*rightColumnWidth/6" :y="margin*2"/>
-    <stud v-for="i in 7"
-          :key="'row2-'+i"
-          :x="100-margin-(i-1)*(rightColumnWidth/6 - 1)" :y="55+margin/4"/>
-    <stud v-for="i in 7"
-          :key="'row3-'+i"
-          :x="100-margin-(i-1)*(rightColumnWidth/6 - 0.5)" :y="100-margin*2"/>
-
-
-    <transition name="zoom">
-      <column v-if="showColumn"
-              :index="showColumn" />
-    </transition>
+    <star v-for="(xy,i) in randXY"
+          :key="'star'+i"
+          :x="xy[0]"
+          :y="xy[1]"
+          />
+<!--    <transition name="zoom">-->
+<!--      <column v-if="expandedPage"-->
+<!--              :index="expandedPage" />-->
+<!--    </transition>-->
     <Footer />
   </div>
 </template>
 
 <script>
-import Paragraph from "@/components/Paragraph";
-import Column from "@/components/Column";
-import Stud from "@/components/Stud";
+import Paragraph from "@/components/Page";
+import Stud from "@/components/Blocks/Stud";
+import Star from "@/components/Blocks/Star";
 import Footer from "@/components/Footer";
-// import MagnifyingGlass from "@/components/MagnifyingGlass";
+import MenuBar from "@/components/MenuBar";
+import About from "@/components/Menu/About";
+import Acknowledgement from "@/components/Menu/Acknowledgement";
+import Future from "@/components/Menu/Future";
+import Team from "@/components/Menu/Team";
+import MagnifyingGlass from "@/components/MagnifyingGlass";
+// import Column from "@/components/Column";
 
-// import * as gsap from "gsap";
+import json from "../assets/json/content.json"
 
 export default {
   name: "Home",
   components: {
+    Team,
+    Future,
+    Acknowledgement,
+    About,
+    MenuBar,
     Stud,
-    Column,
-    // MagnifyingGlass,
+    Star,
+    // Column,
+    MagnifyingGlass,
     Paragraph,
     Footer,
   },
   mounted() {
     window.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
-        this.showColumn = false;
+        this.expandedPage = false;
       }
     });
     this.wh = window.innerHeight;
     this.ww = window.innerWidth;
+    for (let i=0; i < 30; i++){
+      this.randXY.push([Math.random()*100, Math.random()*100])
+    }
+    this.mouseX = parseInt(this.ww * ((this.rightColumnWidth - this.margin) / 100 * Math.random() + 1 - this.rightColumnWidth/100)) + 'px';
+    this.mouseY = parseInt(this.wh * Math.random()) + 'px';
   },
   data() {
     return {
-      mouseX: '-500px',
-      mouseY: '-500px',
+      contents: json,
+      showPage: this.$route.params.page,
+      randXY: [],
+      mouseX: '0',
+      mouseY: '0',
       wh: '',
       ww: '',
       showMagnifyingGlass: false,
-      margin: 2,
+      margin: 7,
       rightColumnWidth: 80,
-      showColumn: false,
+      expandedPage: false,
       logoCoor: [[4.8102,4.569], [7.0941,4.569], [8.7642,4.569], [9.9412,4.569], [10.5064,4.569], [11.0809,4.569],
         [12.5344,4.569], [13.0996,4.569], [13.674,4.569], [15.0998,4.569], [15.665,4.569], [16.2395,4.569],
         [4.0385, 5.0525], [5.7101, 5.0525], [16.493 ,5.0525], [7.0941,5.5596], [8.7642 ,5.5596], [9.9486 ,5.5596],
@@ -118,8 +130,8 @@ export default {
     }
   },
   methods: {
-    showColumnFunc(bool) {
-      this.showColumn = bool;
+    expandedPageFunc(i) {
+      this.expandedPage = i;
     },
     mouseXYFunc(xy) {
       this.mouseX = xy[0] + 'px';
@@ -127,6 +139,9 @@ export default {
     },
     showMagnifyingGlassFunc(bool) {
       this.showMagnifyingGlass = bool;
+    },
+    slidePage() {
+
     }
   }
 
@@ -137,8 +152,5 @@ export default {
 <style scoped>
 #column-left >img{
   z-index: 999;
-}
-.stud-logo:hover {
-  visibility: hidden;
 }
 </style>
