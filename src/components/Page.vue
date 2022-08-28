@@ -21,8 +21,8 @@
         x='97.5%'
         :y="i+'%'">
 <!--            ✸-->
-<!--            ｜-->
-          ‖
+            ｜
+<!--          ‖-->
 
         </text>
       </svg>
@@ -127,7 +127,7 @@ export default {
     align-self: center;
     max-width: calc(100% - 30px);
     filter: grayscale(100%) contrast(150%) brightness(120%);
-    opacity: 80%;
+    opacity: 0.8;
   }
 
   .page:hover {

@@ -1,8 +1,8 @@
 <template>
-  <router-link to="/" class="stud"
+  <div to="/" class="stud"
        :style="{left: x + '%', top: y + '%'}">
     <img src="../../assets/stud.png">
-  </router-link>
+  </div>
 </template>
 
 <script>

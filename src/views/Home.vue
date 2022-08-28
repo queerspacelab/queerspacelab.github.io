@@ -29,8 +29,9 @@
                :width="showPage ? 1 : (rightColumnWidth-margin)/6"/>
 <!--    </transition>-->
     <magnifying-glass
-        :x_init="ww * ((rightColumnWidth - margin) / 100 * Math.random() + 1 - rightColumnWidth/100)"
-        :y_init="wh * Math.random()" />
+      :x_init = "glassX"
+      :y_init = "glassY"
+      />
 
     <star v-for="(xy,i) in randXY"
           :key="'star'+i"
@@ -86,16 +87,16 @@ export default {
     for (let i=0; i < 30; i++){
       this.randXY.push([Math.random()*100, Math.random()*100])
     }
-    this.mouseX = parseInt(this.ww * ((this.rightColumnWidth - this.margin) / 100 * Math.random() + 1 - this.rightColumnWidth/100)) + 'px';
-    this.mouseY = parseInt(this.wh * Math.random()) + 'px';
+    this.glassX = this.ww * ((this.rightColumnWidth - this.margin) / 100 * Math.random() + 1 - this.rightColumnWidth/100);
+    this.glassY = this.wh * Math.random();
   },
   data() {
     return {
       contents: json,
       showPage: this.$route.params.page,
       randXY: [],
-      mouseX: '0',
-      mouseY: '0',
+      glassX: 0,
+      glassY: 0,
       wh: '',
       ww: '',
       showMagnifyingGlass: false,

@@ -73,7 +73,7 @@ p {
   min-width: 600px;
   width: 60%;
   min-height: 100%;
-  z-index: 10;
+  z-index: 998;
   box-shadow: var(--shadow);
 }
 

@@ -3,24 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c1f3428c-7a1e-4944-b75e-2261a659467b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/app.b24062a4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/MHH.9e0028aa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/MIT_Arch.ec60d11e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/emerson.8c876073.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/no_trespassing.84a71fd8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/police_article.4ab761d1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/queer_turkey.aef2049c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/stud.e9ffd13b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/three_friends.3acc41d3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/wilg.13762a53.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.b0e1ac5e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.b0e1ac5e.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.bd7ad764.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.bd7ad764.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/stud.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/stylesheets/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/085b54520cac5d8a3aef822477b2b61c.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/085b54520cac5d8a3aef822477b2b61c.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2cfe9628f9b76c7ebe8efe5b33c10552.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2cfe9628f9b76c7ebe8efe5b33c10552.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3b2ee036a12d2b8fe24153420507dc27.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3b2ee036a12d2b8fe24153420507dc27.json" afterDir="false" />
@@ -64,7 +46,11 @@
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ea92d0189c05ca420466e80023b2dd0a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ea92d0189c05ca420466e80023b2dd0a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/eb73fb75f2267776e0e884bd71ccb991.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/eb73fb75f2267776e0e884bd71ccb991.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/f00d33fce2c87857099b851aa16e8f3c.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/f00d33fce2c87857099b851aa16e8f3c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blocks/Stud.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blocks/Stud.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MagnifyingGlass.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MagnifyingGlass.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +130,7 @@
       <workItem from="1660185295234" duration="1069000" />
       <workItem from="1660191594155" duration="16863000" />
       <workItem from="1661014482518" duration="16872000" />
-      <workItem from="1661533602013" duration="24212000" />
+      <workItem from="1661533602013" duration="25447000" />
     </task>
     <servers />
   </component>
