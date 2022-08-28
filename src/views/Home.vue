@@ -12,10 +12,6 @@
           :key="'stud'+i"
           :x="xy[0]*2000 /ww - 2.5"
           :y="xy[1]*2000 /wh - 2" />
-<!--    <Transition-->
-<!--        @enter="slidePage()"-->
-<!--    >-->
-<!--    <transition name="slide">-->
     <paragraph v-for="(content, i) in contents"
                @expandedPage="expandedPageFunc($event)"
                :key="'page'+i"
@@ -25,9 +21,8 @@
                :author="content.author"
                :content="content.content"
                :img="content.img"
-               :left="showPage ? 100-margin-(i+1) : 100-margin-(i+1)*(rightColumnWidth-margin)/6"
-               :width="showPage ? 1 : (rightColumnWidth-margin)/6"/>
-<!--    </transition>-->
+               :left="$route.params.page ? 100-margin-4*(i+1) : 100-margin-(i+1)*(rightColumnWidth-margin)/6"
+               :width="$route.params.page ? 4 : (rightColumnWidth-margin)/6"/>
     <magnifying-glass
       :x_init = "glassX"
       :y_init = "glassY"

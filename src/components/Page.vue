@@ -1,25 +1,26 @@
 <template>
-    <div class="page"
+  <div class="page"
          @mouseenter = "isMouseOver = true"
          @mouseleave = "isMouseOver = false"
-         :style="{ left: left_this + '%',
+         :style="{ left: left + '%',
                    width: '400px',
                    height: '100%',
                    transform: isMouseOver? 'translateX(' + (5 + ww * width/400-100) + '%)': 'translateX(' + (ww * width/400-100) + '%)'}"
     >
+
       <div class="tag"
            @click="emitClickedIndex(index)"
            :style="'top:' + nameTagPos + '%'">
-        <p style="font-size: 1.3rem">{{ title_short }}</p>
+        <p style="font-size: 1.3rem; font-weight: 500">{{ title_short }}</p>
       </div>
       <svg style="position: absolute; height: 100%; width: 100%;">
-        <text v-for="i in 100"
-              font-size="0.7rem"
-              font-weight="700"
+        <text v-for="i in Math.floor(wh/10)"
+              :font-size="(wh/Math.round(wh/10)*0.8) + 'px'"
+              font-weight="800"
               color="gray"
               :key="'glyph'+index+i"
         x='97.5%'
-        :y="i+'%'">
+        :y="100/Math.floor(wh/10)*i+'%'">
 <!--            ✸-->
             ｜
 <!--          ‖-->
@@ -49,6 +50,8 @@
 </template>
 
 <script>
+// import * as gsap from "gsap";
+import gsap from "gsap";
 export default {
   name: "Page",
   props: {
@@ -67,13 +70,15 @@ export default {
   },
   data() {
     return {
-      wh: '',
-      ww: '',
+      wh: 0,
+      ww: 0,
       mouseX: '-500px',
       mouseY: '-500px',
       nameTagPos: '',
+      interval: false,
       isMouseOver: false,
       left_this: 0,
+      width_this: 200,
       transform: {
         rotate: 0,
         skewX: 0,
@@ -83,17 +88,43 @@ export default {
   },
   mounted() {
     this.left_this = this.left
+    this.width_this = this.width
     this.nameTagPos = (50 + (-1)**this.index*(1+Math.random())*15)
     this.wh = window.innerHeight;
     this.ww = window.innerWidth;
+    console.log(this.wh);
   },
   methods: {
     // getImage(path){
     //   return require('../assets/images/' + path);
     // },
+
     emitClickedIndex(i) {
       this.$emit("expandedPage", i);
     },
+  },
+  // computed: {
+  //   left_animated: function() {
+  //     return this.left_this.toFixed(0);
+  //   },
+  //   width_animated: function() {
+  //     return this.width_this.toFixed(0);
+  //   }
+  // },
+  watch: {
+    left: function(d) {
+      gsap.to(this.$data,{ duration: 1000, left_this: d });
+    },
+    width: function(d) {
+      gsap.to(this.$data,{ duration: 1000, width_this: d });
+    },
+    // width: function () {
+    //   let width_ = this.width
+    //   this.tween(width_, this.width)
+    // }
+    // width: function(d) {
+    //   this.width_this = d;
+    // }
   }
 }
 </script>
@@ -102,8 +133,6 @@ export default {
   :deep() p {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
-    font-size: var(--font-med);
-    letter-spacing: -0.05rem;
     margin: 20px 30px;
   }
 

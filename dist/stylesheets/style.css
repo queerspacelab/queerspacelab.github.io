@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,600');
 @import url('https://fonts.googleapis.com/css?family=Fraunces:300,400,500');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Space+Grotesk:200,300,400,500,600,700');
 
 html {
   margin: 0;
-  /*font-family: "IBM Plex Mono", monospace;*/
+  font-family: "Space Grotesk", monospace;
   font-weight: 400;
   font-size: 12px;
   text-rendering: optimizeLegibility;
@@ -33,25 +34,23 @@ body {
 }
 
 h1 {
-  font-family: "IBM Plex Mono", monospace;
   font-size: var(--font-biggest);
   letter-spacing: 0;
-  font-weight: 600;
-  margin: 30px;
+  font-weight: 700;
+  margin: 15px;
 }
 
 h2 {
-  font-family: "IBM Plex Mono", monospace;
   font-size: var(--font-big);
-  font-weight: 400;
-  margin-left: 30px;
+  font-weight: 600;
+  margin-left: 50px;
 }
 
 p {
-  font-family: "IBM Plex Mono", monospace;
   font-size: var(--font-med);
+  font-weight: 600;
   margin: 15px;
-  letter-spacing: -0.045rem;
+  letter-spacing: -0.02rem;
   text-align: justify;
   -ms-hyphens: auto;
   -moz-hyphens: auto;
@@ -70,18 +69,20 @@ p {
   position: absolute;
   background: white;
   left: 20%;
-  min-width: 600px;
-  width: 60%;
+  min-width: 500px;
+  width: 50%;
   min-height: 100%;
   z-index: 998;
   box-shadow: var(--shadow);
 }
 
 .page-full > h1 {
-  margin: 50px;
+  font-size: var(--font-biggest);
+  margin: 50% 50px 50px;
 }
 .page-full > p {
-  margin: 50px;
+  font-size: var(--font-big);
+  margin: 80px;
 }
 
 

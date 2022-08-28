@@ -53,8 +53,8 @@ export default {
 <style scoped>
   #magnifying-glass {
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
     transform: translate(-50%,-50%);
     background: white;
     opacity: 0.8;

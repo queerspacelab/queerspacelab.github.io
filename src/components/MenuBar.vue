@@ -46,7 +46,6 @@ export default {
     top: 70%;
   }
   a {
-    font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
     color: black;
     text-decoration: none;
