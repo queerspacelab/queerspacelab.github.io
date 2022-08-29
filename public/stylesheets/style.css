@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,600');
-@import url('https://fonts.googleapis.com/css?family=Fraunces:300,400,500');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,600');*/
+/*@import url('https://fonts.googleapis.com/css?family=Fraunces:300,400,500');*/
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Space+Grotesk:200,300,400,500,600,700');
 
@@ -21,8 +21,8 @@ body {
 :root {
   --shadow:
           0.7px 0.7px 10.5px rgba(0, 0, 0, 0.07),
-          1.8px 1.8px 18.9px rgba(0, 0, 0, 0.10),
-          3.7px 3.7px 26.8px rgba(0, 0, 0, 0.12);
+          1.8px 1.8px 15px rgba(0, 0, 0, 0.10),
+          3.7px 3.7px 20px rgba(0, 0, 0, 0.12);
           /*7.7px 7.7px 37.9px rgba(0, 0, 0, 0.15),*/
           /*21px 21px 75px rgba(0, 0, 0, 0.22);*/
   --font-biggest: 2.8rem;
@@ -68,7 +68,7 @@ p {
 .page-full{
   position: absolute;
   background: white;
-  left: 20%;
+  left: 360px;
   min-width: 500px;
   width: 50%;
   min-height: 100%;

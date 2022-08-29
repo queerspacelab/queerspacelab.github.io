@@ -12,21 +12,26 @@
           :key="'stud'+i"
           :x="xy[0]*2000 /ww - 2.5"
           :y="xy[1]*2000 /wh - 2" />
-    <paragraph v-for="(content, i) in contents"
-               @expandedPage="expandedPageFunc($event)"
-               :key="'page'+i"
-               :index="i"
-               :isActive="i === expandedPage"
-               :title_short="content.title_short"
-               :author="content.author"
-               :content="content.content"
-               :img="content.img"
-               :left="$route.params.page ? 100-margin-4*(i+1) : 100-margin-(i+1)*(100-menuWidth/ww*100-margin)/6"
-               :width="$route.params.page ? 4 : (100-menuWidth/ww*100-margin)/6"/>
-    <magnifying-glass
-      :x_init = "glassX"
-      :y_init = "glassY"
+    <div id="column-right" v-if="!isMobileDevice">
+      <paragraph v-for="(content, i) in contents"
+                 @expandedPage="expandedPageFunc($event)"
+                 :key="'page'+i"
+                 :index="i"
+                 :isActive="i === expandedPage"
+                 :title_short="content.title_short"
+                 :author="content.author"
+                 :content="content.content"
+                 :img="content.img"
+                 :left="$route.params.page ? 100-margin-(i+1)*(100-menuWidth/ww*100-fullPageWidth/ww*100-margin)/6
+                          : 100-margin-(i+1)*(100-menuWidth/ww*100-margin)/6"
+                 :width="$route.params.page ? (100-menuWidth/ww*100-fullPageWidth/ww*100-margin)/6
+                          : (100-menuWidth/ww*100-margin)/6"/>
+      <magnifying-glass
+          :x_init = "glassX"
+          :y_init = "glassY"
       />
+    </div>
+
 
     <star v-for="(xy,i) in randXY"
           :key="'star'+i"
@@ -72,13 +77,18 @@ export default {
     Footer,
   },
   mounted() {
+    this.isMobileDevice = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+    if (this.isMobileDevice) console.log('mobile device detected');
+
     window.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         this.expandedPage = false;
       }
     });
+
     this.wh = window.innerHeight;
     this.ww = window.innerWidth;
+    this.fullPageWidth = this.ww > 1000 ? this.ww/2 : 500;
     for (let i=0; i < 30; i++){
       this.randXY.push([Math.random()*100, Math.random()*100])
     }
@@ -87,6 +97,7 @@ export default {
   },
   data() {
     return {
+      isMobileDevice: false,
       contents: json,
       showPage: this.$route.params.page,
       randXY: [],
@@ -97,6 +108,7 @@ export default {
       showMagnifyingGlass: false,
       margin: 7,
       menuWidth: 360,
+      fullPageWidth: 500,
       rightColumnWidth: 80,
       expandedPage: false,
       logoCoor: [[4.8102,4.569], [7.0941,4.569], [8.7642,4.569], [9.9412,4.569], [10.5064,4.569], [11.0809,4.569],
@@ -139,7 +151,7 @@ export default {
     },
     slidePage() {
 
-    }
+    },
   }
 
 
