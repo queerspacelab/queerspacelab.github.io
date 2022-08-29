@@ -1,7 +1,8 @@
 <template>
-  <div id="menubar" class="page">
+  <div id="menubar" class="page" :style="{width: width+'px'}">
     <div id="menu">
-<!--      <stud :x="500" :y="500"/>-->
+<!--      <star v-for="i in 5" :key="'bullet'+i" :x="16" :y="18*i-5"/>-->
+      <stud v-for="i in 5" :key="'bullet'+i" :x="16" :y="18*i-6"/>
       <router-link to="/">
         <h2>Home</h2>
       </router-link>
@@ -22,10 +23,17 @@
 </template>
 
 <script>
-import Stud from "./Blocks/Stud";
+import Stud from "@/components/Blocks/Stud";
+// import Star from "@/components/Blocks/Star";
 export default {
   name: "MenuBar",
-  components: Stud,
+  props: {
+    width: Number,
+  },
+  components: {
+    Stud,
+    // Star
+  },
 }
 </script>
 
@@ -36,14 +44,13 @@ export default {
     box-shadow: var(--shadow);
     /*top: %;*/
     height: 100vh;
-    width: 20vw;
     padding: 0;
     margin: 0;
     z-index: 999;
   }
   #menu {
     position: absolute;
-    top: 70%;
+    bottom: 10%;
   }
   a {
     font-weight: 700;

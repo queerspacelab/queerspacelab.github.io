@@ -24,7 +24,6 @@
 <!--            ✸-->
             ｜
 <!--          ‖-->
-
         </text>
       </svg>
       <div v-html="content" />
@@ -180,7 +179,9 @@ export default {
     position: fixed;
     text-shadow: 0 0 5px black;
   }
-
+.tag > p {
+  margin: 10px 20px;
+}
   svg {
     padding: 0;
     margin: 0;

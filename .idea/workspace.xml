@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c1f3428c-7a1e-4944-b75e-2261a659467b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.bd7ad764.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.bd7ad764.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/stylesheets/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/085b54520cac5d8a3aef822477b2b61c.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/085b54520cac5d8a3aef822477b2b61c.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2cfe9628f9b76c7ebe8efe5b33c10552.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2cfe9628f9b76c7ebe8efe5b33c10552.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3b2ee036a12d2b8fe24153420507dc27.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3b2ee036a12d2b8fe24153420507dc27.json" afterDir="false" />
@@ -135,10 +136,8 @@
       <change beforePath="$PROJECT_DIR$/node_modules/gsap/utils/matrix.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/utils/matrix.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/gsap/utils/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/utils/paths.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/gsap/utils/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/utils/strings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MagnifyingGlass.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MagnifyingGlass.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MenuBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuBar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Page.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
@@ -169,20 +168,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/carbonhouse_mit/Documents/queerspacelab.github.io/src/components/Menu",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/carbonhouse_mit/Documents/queerspacelab.github.io/src/components/Menu&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/Menu" />
@@ -222,7 +221,8 @@
       <workItem from="1660185295234" duration="1069000" />
       <workItem from="1660191594155" duration="16863000" />
       <workItem from="1661014482518" duration="16872000" />
-      <workItem from="1661533602013" duration="33928000" />
+      <workItem from="1661533602013" duration="36949000" />
+      <workItem from="1661745457556" duration="265000" />
     </task>
     <servers />
   </component>

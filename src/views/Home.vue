@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="full-bleed">
-    <menu-bar/>
+    <menu-bar :width="menuWidth"/>
     <transition name="slide">
       <about v-if="$route.params.page === 'about'" />
       <acknowledgement v-if="$route.params.page === 'acknowledgment'" />
@@ -21,8 +21,8 @@
                :author="content.author"
                :content="content.content"
                :img="content.img"
-               :left="$route.params.page ? 100-margin-4*(i+1) : 100-margin-(i+1)*(rightColumnWidth-margin)/6"
-               :width="$route.params.page ? 4 : (rightColumnWidth-margin)/6"/>
+               :left="$route.params.page ? 100-margin-4*(i+1) : 100-margin-(i+1)*(100-menuWidth/ww*100-margin)/6"
+               :width="$route.params.page ? 4 : (100-menuWidth/ww*100-margin)/6"/>
     <magnifying-glass
       :x_init = "glassX"
       :y_init = "glassY"
@@ -96,6 +96,7 @@ export default {
       ww: '',
       showMagnifyingGlass: false,
       margin: 7,
+      menuWidth: 360,
       rightColumnWidth: 80,
       expandedPage: false,
       logoCoor: [[4.8102,4.569], [7.0941,4.569], [8.7642,4.569], [9.9412,4.569], [10.5064,4.569], [11.0809,4.569],
