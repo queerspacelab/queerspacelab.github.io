@@ -1,0 +1,199 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,600');*/
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Space+Grotesk:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+@import url('https://fonts.googleapis.com/css?family=Flow+Circular');
+@import url('https://fonts.googleapis.com/css?family=Fraunces:300,400,500,700');
+
+@font-face {
+  font-family: HKGrotesk;
+  font-display: auto;
+  src: local("HKGrotesk"), url("/fonts/HKGrotesk/HKGrotesk-Bold.woff") format("woff"), url("/fonts/HKGrotesk/HKGrotesk-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+html {
+  margin: 0;
+  font-family: HKGrotesk, sans-serif;
+  font-weight: bold;
+  /*font-weight: 400;*/
+  line-height: 1.3;
+  font-size: 12px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0 auto;
+  background: #757575;
+  overflow-x: clip;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+
+:root {
+  --shadow:
+          0.5px 0.5px 10.5px rgba(0, 0, 0, 0.07),
+          2px 2px 15px rgba(0, 0, 0, 0.09),
+          3.5px 3.5px 20px rgba(0, 0, 0, 0.11),
+          7.5px 7.5px 38px rgba(0, 0, 0, 0.13);
+          /*21px 21px 75px rgba(0, 0, 0, 0.22);*/
+  --highlight:
+          0.5px 0.5px 10.5px rgba(255, 255, 255, 0.10),
+          2px 2px 15px rgba(255, 255, 255, 0.15),
+          3.5px 3.5px 20px rgba(255, 255, 255, 0.18),
+          7.5px 7.5px 38px rgba(255, 255, 255, 0.22);
+  --font-biggest: 3.2rem;
+  --font-big: 1.8rem;
+  --font-med: 1.5rem;
+  --font-small-med: 1.3rem;
+  --font-small: 1.2rem;
+  --border: 1px solid #757575;
+  --border-dashed: 2px dashed #757575;
+}
+
+h1 {
+  font-size: var(--font-biggest);
+  letter-spacing: 0;
+  font-weight: 700;
+  margin: 15px;
+}
+
+h2 {
+  font-size: var(--font-big);
+  font-weight: 500;
+  /*margin-left: 40px;*/
+}
+
+p {
+  font-size: var(--font-small-med);
+  font-weight: 400;
+  margin: 15px;
+  letter-spacing: -0.02rem;
+  text-align: justify;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+a {
+  text-decoration-color: greenyellow;
+}
+
+
+.full-bleed{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.page-full{
+  position: absolute;
+  background: white;
+  top: 0;
+  left: 340px;
+  /*min-width: 400px;*/
+  /*width: 70%;*/
+  /*max-width: 1080px;*/
+  height: 100%;
+  z-index: 998;
+  box-shadow: var(--shadow);
+  overflow: scroll;
+  /*padding-bottom: 400px;*/
+}
+/*.page-full::-webkit-scrollbar {*/
+/*  display: none;*/
+/*}*/
+.page-full > h1 {
+  font-size: var(--font-biggest);
+  margin: 30% 9% 50px;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 0 1px 6px #222;
+}
+
+.page-full > p {
+  margin: 18px 9%;
+  font-size: var(--font-med);
+}
+
+
+
+
+/*Vue transition*/
+/*slide*/
+
+.slide-enter-active,
+.slide-leave-active {
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+  animation-name: slide;
+}
+
+.slide-leave-active {
+  animation-direction: reverse;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.swipe-down-enter-active,
+.swipe-down-leave-active {
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  animation-name: swipe-down;
+}
+
+.swipe-down-leave-active {
+  animation-direction: reverse;
+}
+
+@keyframes swipe-down {
+  from {
+    opacity: 0;
+    height: 0%;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+  animation-name: fade;
+}
+
+.fade-leave-active {
+  animation-direction: reverse;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scaleX(75%);
+    transform-origin: right;
+  }
+  75% {
+    opacity: 0.75;
+    transform: scaleX(100%);
+    transform-origin: right;
+  }
+  100% {
+    opacity: 1;
+  }
+}

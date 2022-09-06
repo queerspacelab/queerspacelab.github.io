@@ -1,6 +1,6 @@
 <template>
-  <div to="/" class="stud"
-       :style="{left: x + '%', top: y + '%'}">
+  <div class="stud"
+       :style="{left: x + 'px', top: y + 'px'}">
     <img src="../../assets/stud.png">
   </div>
 </template>
@@ -61,20 +61,25 @@ export default {
 
   .stud {
     position: absolute;
-    width: 15px;
-    height: 15px;
+    display: flex;
+    flex-direction: row;
+    vertical-align: center;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
     font-size: 1.5rem;
-    cursor: default;
+    cursor: pointer;
 
     /*box-shadow:*/
     /*    0 0 2px 2px #6c6c6c inset, !* middle magenta *!*/
     /*    0 0 5px 2px rgba(0, 255, 255, 0.66); !* outer cyan *!*/
   }
   .stud > img {
-    width: 70%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
   }
   /*.stud-overlay {*/
   /*  width: 12px;*/

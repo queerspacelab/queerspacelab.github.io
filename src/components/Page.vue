@@ -1,63 +1,59 @@
 <template>
-  <div class="page"
-         @mouseenter = "isMouseOver = true"
-         @mouseleave = "isMouseOver = false"
-         :style="{ left: left + '%',
-                   width: '400px',
-                   height: '100%',
-                   transform: isMouseOver? 'translateX(' + (5 + ww * width/400-100) + '%)': 'translateX(' + (ww * width/400-100) + '%)'}"
-    >
+<!--  <div class="page-wrapper"-->
+<!--       :style="{ left: left + '%',-->
+<!--                   height: '100%',-->
+<!--                   transform: isMouseOver? 'translateX(' + (5 + ww * width/400-100) + '%)': 'translateX(' + (ww * width/400-100) + '%)'}"-->
+<!--  >-->
+  <div class="page-wrapper"
+       @mouseenter = "isMouseOver = !($route.params.project || $route.params.page)"
+       @mouseleave = "isMouseOver = false"
+       :style="{ left: left + 'px',
+                 height: '100%',
+                 zIndex: isMouseOver? 999 :index}"
+  >
+    <router-link tag="div" class="tag"
+                 :to="'/project/' + index"
+                 @click="emitClickedIndex(index)"
+                 :style="{top: nameTagPos + '%', left: '100%'}">
+      <p>{{ title_short }}</p>
+    </router-link>
 
-      <div class="tag"
-           @click="emitClickedIndex(index)"
-           :style="'top:' + nameTagPos + '%'">
-        <p style="font-size: 1.3rem; font-weight: 500">{{ title_short }}</p>
-      </div>
-      <svg style="position: absolute; height: 100%; width: 100%;">
-        <text v-for="i in Math.floor(wh/10)"
-              :font-size="(wh/Math.round(wh/10)*0.8) + 'px'"
-              font-weight="800"
-              color="gray"
-              :key="'glyph'+index+i"
-        x='97.5%'
-        :y="100/Math.floor(wh/10)*i+'%'">
-<!--            ✸-->
-            ｜
-<!--          ‖-->
-        </text>
-      </svg>
-      <div v-html="content" />
-<!--    <p>-->
-<!--      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lectus, imperdiet eu mollis eget, euismod nec odio. Nulla at ornare sapien. Ut sed neque feugiat, suscipit justo ac, dictum sem. Sed ornare sodales rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed elementum nulla aliquam, ornare lectus vel, mattis tortor. Pellentesque a tempor turpis.-->
-<!--    </p><img alt="" :src="getImage(img)">-->
-<!--      <p>-->
-<!--      Fusce ante dui, bibendum sit amet porta a, elementum id libero. Duis congue justo ac orci sodales porta. Pellentesque congue urna sit amet ante convallis iaculis. Suspendisse varius id mauris vestibulum accumsan. Maecenas egestas nisl id ipsum aliquet, ut cursus leo venenatis. Aenean eu dolor quis felis vulputate mattis vel et massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec feugiat pellentesque libero id sagittis. Vivamus porttitor iaculis risus, et fringilla magna pretium non.-->
-<!--      In nunc metus, consequat eu felis in, convallis commodo dui. Pellentesque nulla felis, dictum quis porttitor nec, posuere vel justo. Integer elementum nunc ac odio aliquet consectetur. In quis vestibulum libero. Vestibulum eget arcu metus. Sed eu ipsum vitae mi convallis auctor. Nam eu finibus nisl. Sed at posuere velit. In hac habitasse platea dictumst. Morbi non pulvinar ante, vitae facilisis nisl. Suspendisse posuere diam vitae commodo semper. Nullam bibendum eros dictum, pellentesque ipsum vel, consequat turpis. Suspendisse iaculis tortor sed enim sagittis, a pretium nunc eleifend. Aenean id egestas purus, vel porta mauris. Cras imperdiet egestas commodo. Cras convallis orci nec nisi aliquam pulvinar.-->
-<!--      Phasellus ultrices, ipsum a aliquet pretium, ipsum nisi tempor orci, quis porta dolor neque quis magna. Integer et rutrum sem. Nunc at arcu est. Integer fringilla condimentum ultrices. Morbi sit amet tempus nisi. Nulla varius quam sed vehicula fringilla. Fusce ut arcu a lectus condimentum lobortis non at risus.-->
-<!--      Etiam vel placerat purus. Morbi nec justo ligula. Integer eget accumsan lacus. Vivamus et leo porttitor, sagittis justo rutrum, vestibulum orci. Integer condimentum purus vestibulum pharetra imperdiet. Nullam arcu metus, ultrices vel pulvinar non, accumsan in dui. Proin semper tincidunt porttitor. Donec volutpat varius erat, quis ultrices nunc ultrices vel. Aenean in lacinia ante, et elementum felis. Aliquam aliquet, nibh nec eleifend lobortis, mi risus pharetra libero, eu placerat tortor orci eget sem. Mauris vitae ullamcorper felis. Duis ut metus at mauris egestas tempus at nec massa. Phasellus quis tellus sollicitudin, pellentesque felis nec, fringilla sapien. Ut facilisis velit ac lorem dignissim, finibus finibus ipsum volutpat. Vestibulum sed diam sit amet ante malesuada fermentum suscipit quis nisi. Aliquam erat volutpat.-->
-<!--      Integer id consectetur libero, et facilisis augue. In mollis lobortis metus quis commodo. Etiam viverra nibh nec nunc rutrum blandit. Suspendisse vitae sapien sit amet magna iaculis lacinia. Aenean pulvinar metus ut turpis iaculis posuere. Aliquam vel felis nunc. Morbi rhoncus dictum dignissim. Aliquam erat volutpat. Cras a iaculis lacus. Vestibulum condimentum elit et sagittis rhoncus. In consequat scelerisque tempus.-->
-<!--      Maecenas dapibus lacinia vulputate. Sed diam felis, malesuada non enim vitae, imperdiet vestibulum purus. Proin quis tempor nulla, sit amet posuere massa. Phasellus auctor sollicitudin est vitae ornare. Nulla lorem est, lacinia at tempor sed, laoreet in eros. Sed id vehicula arcu, sed tincidunt purus. Suspendisse sollicitudin varius odio eu interdum. Nulla a lorem enim. Vestibulum nibh arcu, mattis non leo quis, volutpat facilisis magna. Donec eget mauris nulla.-->
-<!--      Sed nec suscipit tellus. Pellentesque porta purus lectus, a congue velit sagittis eget. Maecenas hendrerit eros nec eros rhoncus, ac dapibus nisl molestie. Mauris at dictum augue. Fusce ut pulvinar urna. Cras dapibus convallis ex vel scelerisque. Aliquam id mi eget leo ultricies feugiat sit amet ac ipsum. Duis felis turpis, eleifend non enim et, pharetra vulputate elit. Duis blandit arcu sit amet posuere aliquam.-->
-<!--      Aliquam semper, mi at volutpat suscipit, erat arcu rhoncus augue, sagittis rhoncus risus leo eget ante. Phasellus efficitur porta auctor. Vivamus ultricies, arcu et efficitur hendrerit, quam mauris volutpat eros, a rhoncus nisl libero nec neque. Fusce efficitur, ante nec euismod efficitur, augue mauris tempor dui, a cursus ipsum odio sed dolor. Pellentesque quis efficitur arcu. Aliquam sed enim sit amet eros posuere accumsan vulputate quis diam. Maecenas bibendum velit rhoncus metus gravida efficitur. Etiam ut libero accumsan, consequat risus sed, interdum turpis. Vivamus nec euismod neque. Mauris nec ornare massa. Suspendisse consectetur neque id tellus facilisis, sed vestibulum nisl feugiat.-->
-<!--      Pellentesque vestibulum ipsum leo, id varius tellus vehicula vel. Pellentesque felis dui, blandit at diam vitae, suscipit lobortis mi. Phasellus malesuada erat accumsan imperdiet sodales. Integer vestibulum imperdiet ligula id mattis. Nam laoreet tincidunt ante, id placerat velit mattis id. Quisque bibendum nibh nisl, quis eleifend ante dignissim in. Cras metus ante, venenatis dignissim libero nec, pellentesque ornare erat. Nulla nec lacus leo. Aenean venenatis nibh vitae sapien finibus congue. Maecenas rhoncus tortor non velit lobortis, non viverra lectus mollis.-->
-<!--      Phasellus id ligula ante. Nullam mi turpis, ornare dapibus aliquam sed, efficitur eu nisi. Vestibulum ac sodales lectus. Nam fringilla, augue a condimentum vehicula, ligula ex auctor ipsum, et faucibus dolor felis quis augue. Morbi efficitur maximus suscipit. Curabitur vehicula metus leo, ut venenatis tellus posuere ut. Pellentesque vitae luctus ante, eu suscipit leo. Sed sit amet ex a est volutpat molestie eu vel massa. Suspendisse ac nulla velit.-->
-<!--      Aliquam ut odio mollis, finibus quam sed, pellentesque ipsum. Suspendisse pellentesque nulla eros, ac vestibulum urna ullamcorper in. Phasellus ut finibus massa, et sollicitudin magna. Cras finibus viverra urna a hendrerit. Donec consequat urna nunc, nec laoreet urna euismod bibendum. Proin volutpat lobortis dolor ac fermentum. Nunc nec mi urna. Suspendisse ultrices justo arcu, vitae euismod risus accumsan at. Fusce eu urna eget libero porta interdum eget at lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc suscipit eros sed mauris congue malesuada a a tortor. Vivamus ultricies mauris vitae enim cursus, luctus rutrum turpis ultrices. Aenean fermentum accumsan nisl et laoreet.-->
-<!--      Sed tincidunt eros arcu, in molestie neque cursus quis. Maecenas pharetra bibendum ex id laoreet. Fusce congue tempus enim ac sagittis. Integer tempus aliquet tristique. Praesent dolor nulla, consectetur eget velit non, posuere consequat quam. Donec.-->
-<!--    </p>-->
+    <router-link tag="div" class="page"
+                 v-show="$route.params.project != index"
+                 v-html="abstract"
+                 :to="'/project/' + index"
+                 :style="{ width: width + 'px'}"
+    />
+
+    <!--    <svg style="position: absolute; height: 100%; width: 100%;">-->
+<!--      <text v-for="i in Math.floor(wh/10)"-->
+<!--            :font-size="(wh/Math.round(wh/10)*0.8) + 'px'"-->
+<!--            font-family="IBM Plex Mono"-->
+<!--            font-weight="800"-->
+<!--            :key="'glyph'+index+i"-->
+<!--      x='2.5%'-->
+<!--      :y="100/Math.floor(wh/10)*i+'%'">-->
+<!--&lt;!&ndash;            ✸&ndash;&gt;-->
+<!--          ｜-->
+<!--&lt;!&ndash;          ‖&ndash;&gt;-->
+<!--      </text>-->
+<!--    </svg>-->
   </div>
 
 </template>
 
 <script>
 // import * as gsap from "gsap";
-import gsap from "gsap";
+// import gsap from "gsap";
 export default {
   name: "Page",
   props: {
     index: Number,
     title_short: String,
-    author: String,
-    content: String,
+    // author: String,
+    layout: Object,
+    contents: Array,
+    abstract: String,
     left: Number,
     width: Number,
     img: String,
@@ -69,38 +65,42 @@ export default {
   },
   data() {
     return {
-      wh: 0,
-      ww: 0,
-      mouseX: '-500px',
-      mouseY: '-500px',
+      title_stringified: '',
+      // wh: 0,
+      // ww: 0,
+      // mouseX: '-500px',
+      // mouseY: '-500px',
       nameTagPos: '',
       interval: false,
       isMouseOver: false,
-      left_this: 0,
-      width_this: 200,
-      transform: {
-        rotate: 0,
-        skewX: 0,
-        skewY: 0,
-      }
+      // left_this: 0,
+      // width_this: 200,
+      // transform: {
+      //   rotate: 0,
+      //   skewX: 0,
+      //   skewY: 0,
+      // }
     }
   },
   mounted() {
-    this.left_this = this.left
-    this.width_this = this.width
-    this.nameTagPos = (50 + (-1)**this.index*(1+Math.random())*15)
-    this.wh = window.innerHeight;
-    this.ww = window.innerWidth;
-    console.log(this.wh);
+    // this.title_stringified = this.title_short.toLowerCase().split(' ').join('_');
+    // console.log(this.title_stringified);
+    // this.left_this = this.left
+    // this.width_this = this.width
+    this.nameTagPos = (50 - (-1)**this.index*(1+Math.random())*15)
+    // this.wh = window.innerHeight;
+    // this.ww = window.innerWidth;
   },
+
   methods: {
     // getImage(path){
     //   return require('../assets/images/' + path);
     // },
 
     emitClickedIndex(i) {
-      this.$emit("expandedPage", i);
-    },
+      this.$emit("clickedIndex", i);
+    }
+
   },
   // computed: {
   //   left_animated: function() {
@@ -111,12 +111,13 @@ export default {
   //   }
   // },
   watch: {
-    left: function(d) {
-      gsap.to(this.$data,{ duration: 1000, left_this: d });
-    },
-    width: function(d) {
-      gsap.to(this.$data,{ duration: 1000, width_this: d });
-    },
+    // left: function(d) {
+    //   gsap.to(this.$data,{ duration: 1000, left_this: d });
+    // },
+    // width: function(d) {
+    //   gsap.to(this.$data,{ duration: 1000, width_this: d });
+    // },
+
     // width: function () {
     //   let width_ = this.width
     //   this.tween(width_, this.width)
@@ -130,56 +131,89 @@ export default {
 
 <style scoped>
   :deep() p {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    margin: 20px 30px;
+    font-family: "IBM Plex Mono", sans-serif;
+    font-weight: 300;
+    font-size: var(--font-small);
+    letter-spacing: -1px;
+    margin: 10px 30px;
+    text-shadow: 0 0 15px black;
   }
 
   .page {
-    position: absolute;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    vertical-align: center;
+    position: relative;
     background: white;
     box-shadow: var(--shadow);
-    float: left;
     text-align: justify;
-    color: transparent;
-    text-shadow: 0 0 15px black;
+    color: white;
     cursor: pointer;
-    z-index: 9;
-    overflow-y: clip;
-    -ms-overflow-y: clip;
+    overflow-y: scroll;
+    -ms-overflow-y: scroll;
     overflow-x: visible;
+    -ms-overflow-x: visible;
+  }
+  .page::-webkit-scrollbar {
+    display: none;
+  }
+  .page-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    /*z-index: 99;*/
+
+    /*overflow-y: scroll;*/
+    /*-ms-overflow-y: scroll;*/
+    overflow-x: visible;
+    -ms-overflow-x: visible;
   }
 
   :deep() img {
     position: relative;
     align-self: center;
-    max-width: calc(100% - 30px);
-    filter: grayscale(100%) contrast(150%) brightness(120%);
-    opacity: 0.8;
+    width: 100%;
+    /*max-width: calc(100% - 28px);*/
+    filter: grayscale(100%) contrast(200%) brightness(95%);
+    opacity: 0.75;
+    box-shadow: var(--shadow);
   }
-
-  .page:hover {
+  .page-wrapper:hover{
+    transform: translateX(15px);
+  }
+  .page-wrapper:hover :deep() .page > p {
     transition: 0.5s ease-in-out;
     color: black;
     text-shadow: 0 0 8px #444;
   }
 
-  .page:hover :deep() img {
+  .page-wrapper:hover :deep() img {
+    opacity: 1;
     filter: grayscale(0%) contrast(100%) brightness(100%);
+  }
+
+  .page-wrapper:hover :deep() .tag {
+    box-shadow: var(--highlight);
   }
 
   .tag {
     transform: rotate(90deg) translateX(-50%);
     transform-origin: bottom left;
-    left: 100%;
     width: max-content;
     width: -moz-max-content;
+    min-width: 180px;
     background: #414141;
     color: white;
-    position: fixed;
-    text-shadow: 0 0 5px black;
+    position: absolute;
+    box-shadow: var(--highlight);
+    cursor: pointer;;
   }
+
 .tag > p {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: var(--font-small-med);
+  text-shadow: 0 0 8px #c9c9c9;
   margin: 10px 20px;
 }
   svg {

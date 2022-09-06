@@ -1,5 +1,5 @@
 <template>
-  <div id="future" class="page-full">
+  <div id="future" class="page-full" :style="{width: width + 'px'}">
     <svg style="position: absolute; height: 100%; width: 100%;">
       <text v-for="i in 100"
             font-size="0.7rem"
@@ -21,7 +21,11 @@
 
 <script>
 export default {
-  name: "Future"
+  name: "Future",
+  props: {
+    width: Number,
+  }
+
 }
 </script>
 

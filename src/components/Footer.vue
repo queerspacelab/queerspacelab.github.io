@@ -1,12 +1,10 @@
 <template>
 <div id="footer">
-  <div>
   <p>
     Queer Space Lab<br>
     Department of Architecture<br>
     Massachusetts Institute of Technology
   </p>
-  </div>
 <!--  <div class="img-container">-->
   <a href="https://architecture.mit.edu/" target="_blank">
     <img src="../assets/logos/MIT_Arch.png" style="filter: invert(); height: 40px;">
@@ -36,13 +34,20 @@ export default {
     height: 250px;
     margin: 0 auto;
   }
+  #footer > p {
+    font-family: "IBM Plex Mono", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-small);
+    margin: 20px 10px 10px 20px;
+    color: #c9c9c9;
+  }
   .img-container {
     height: 100%;
     display: flex;
     flex-direction: column;
   }
   img {
-    margin: 10px 15px;
+    margin: 10px 20px;
     object-fit: contain;
     /*height: calc(100% - 50px);*/
     /*padding: 10px;*/

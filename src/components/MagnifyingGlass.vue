@@ -1,5 +1,5 @@
 <template>
-  <div id="magnifying-glass" class="pointer" ref="pointer"
+  <div class="magnifying-glass-container"
       :style="{ left: x + 'px',
                 top: y + 'px'}"
        @mousedown="moveActive=true"
@@ -7,6 +7,9 @@
        @mouseup="moveActive=false"
        @mouseleave="moveActive=false"
   >
+      <div class="magnifying-glass"
+           v-html="abstract"/>
+
     <span></span>
   </div>
 </template>
@@ -15,6 +18,7 @@
 export default {
   name: "MagnifyingGlass",
   props: {
+    abstract: String,
     x_init: Number,
     y_init: Number,
   },
@@ -31,6 +35,7 @@ export default {
         e.preventDefault();
         this.x += e.movementX
         this.y += e.movementY
+        this.$emit("mouseXY", [this.x, this.y]);
       }
     }
   },
@@ -51,16 +56,31 @@ export default {
 </script>
 
 <style scoped>
-  #magnifying-glass {
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    transform: translate(-50%,-50%);
-    background: white;
-    opacity: 0.8;
-    border-radius: 50%;
-    border: 0.5px solid black;
+  .magnifying-glass-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform: translate(-150px,-150px) scale(100%);
     cursor: move;
     z-index: 997;
+    clip-path: circle(76px at 75px 75px);
+    overflow: scroll;
   }
+  .magnifying-glass {
+    position: absolute;
+  }
+  :deep() p {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: var(--font-small-med);
+    letter-spacing: -1px;
+    margin: 12px 30px;
+    text-shadow: 0 0 15px black;
+  }
+
+  :deep() img {
+    position: relative;
+    align-self: center;
+    width: 100%;
+  }
+
 </style>

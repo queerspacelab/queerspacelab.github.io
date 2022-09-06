@@ -1,16 +1,16 @@
 <template>
-<div id="about" class="page-full">
-  <svg style="position: absolute; height: 100%; width: 100%;">
-    <text v-for="i in 100"
-          font-size="0.7rem"
-          font-weight="700"
-          color="gray"
-          :key="'about'+i"
-          x='97.5%'
-          :y="i+'%'">
-      ‖
-    </text>
-  </svg>
+<div id="about" class="page-full" :style="{width: width + 'px'}">
+<!--  <svg style="position: absolute; height: 100%; width: 100%;">-->
+<!--    <text v-for="i in 100"-->
+<!--          font-size="0.7rem"-->
+<!--          font-weight="700"-->
+<!--          color="gray"-->
+<!--          :key="'about'+i"-->
+<!--          x='97.5%'-->
+<!--          :y="i+'%'">-->
+<!--      ‖-->
+<!--    </text>-->
+<!--  </svg>-->
 
   <h1>ABOUT</h1>
   <p>
@@ -22,9 +22,11 @@
 <script>
 export default {
   name: "About",
+  props: {
+    width: Number,
+  }
 }
 </script>
 
 <style scoped>
-
 </style>

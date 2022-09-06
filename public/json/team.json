@@ -1,0 +1,39 @@
+[
+  {
+    "author": "Doris Duanmu",
+    "title": "student",
+    "pronouns": "she/her",
+    "bio": "Doris is an architectural and urban designer originally from Guangzhou, China. She received a B.Arch degree from the University of Southern California and worked as a designer specializing in sports and entertainment venue design before joining MIT. Doris is currently pursuing her master's degree in Urbanism (SMArchS). Her research interests fall in spatial, social, and political discussion on the urban scape, especially on civic participation, gender, and sexuality. She is keen on utilizing design thinking to guide the research, integrating writing, drawing, and curating methods into the process.",
+    "link": "mailto:duanmu@mit.edu"
+  },
+  {
+    "author": "Felix Li",
+    "title": "student",
+    "pronouns": "he/him",
+    "bio": "Felix Li is currently studying Art and Design, and Comparative Media Studies at MIT.",
+    "link": "mailto:felixli@mit.edu"
+  },
+  {
+    "author": "Merve Akdogan",
+    "title": "student",
+    "pronouns": "they/them",
+    "bio": "An interdisciplinary designer and architect, Merve Akdogan works in the areas of computational design, visualization, architectural design, public art, exhibition design and so on. They assess the ideas they deal with in their personal art practice and works in the context of body-space relationship based on cultural diversity, queer theories, bodily existence, bodily modifications, and their relationships with spatial aspects. In addition to their professional practices in architecture and design. They continued to work as tattoo artists in this setting, and more recently, their research interests have shifted to on-skin and wearable technologies. Human-self, human-community, human-biological organisms, human-body, body-physical space, body-virtual space, interactive extensions, wearable technologies, ecological thinking, cyborg manifestos, and queer spaces are among the subjects and relationships they discuss. They place a strong emphasis on regenerative responses to societal and cultural variations.",
+    "link": "https://merve.work/"
+  },
+  {
+    "author": "Tj Bayowa",
+    "title": "student",
+    "pronouns": "he/him",
+    "bio": "Tj is a student pursuing a master degree in architecture at MIT.",
+    "link": "https://mywebsite.com (if any)"
+  },
+  {
+    "author": "Mingjia Chen",
+    "title": "student",
+    "pronouns": "they/he",
+    "bio": "Mingjia Chen is a graduate student currently completing their Master of Architecture at the MIT Department of Architecture.",
+    "link": "https://mywebsite.com (if any)"
+  }
+]
+
+
