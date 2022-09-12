@@ -1,16 +1,16 @@
 <template>
   <div id="future" class="page-full" :style="{width: width + 'px'}">
-    <svg style="position: absolute; height: 100%; width: 100%;">
-      <text v-for="i in 100"
-            font-size="0.7rem"
-            font-weight="700"
-            color="gray"
-            :key="'about'+i"
-            x='97.5%'
-            :y="i+'%'">
-        ‖
-      </text>
-    </svg>
+<!--    <svg style="position: absolute; height: 100%; width: 100%;">-->
+<!--      <text v-for="i in 100"-->
+<!--            font-size="0.7rem"-->
+<!--            font-weight="700"-->
+<!--            color="gray"-->
+<!--            :key="'about'+i"-->
+<!--            x='97.5%'-->
+<!--            :y="i+'%'">-->
+<!--        ‖-->
+<!--      </text>-->
+<!--    </svg>-->
 
     <h1>FUTURE VISION</h1>
   <p>

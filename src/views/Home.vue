@@ -11,14 +11,6 @@
       <team v-if="$route.params.page === 'team'"
             :width="layout.fullPageWidth"/>
     </transition>
-<!--    <router-link to="/" id="logo-wrapper">-->
-<!--      <stud v-for="(xy, i) in logoCoor"-->
-<!--            class="stud-logo"-->
-<!--            :key="'stud'+i"-->
-<!--            :x="xy[0]*19 -35"-->
-<!--            :y="xy[1]*19 -40" />-->
-<!--    </router-link>-->
-<!--    <div id="column-right" v-if="!isMobileDevice">-->
     <transition-group appear
                 name="slide">
       <page v-for="(content,i) in contents"

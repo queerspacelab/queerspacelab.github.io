@@ -1,10 +1,10 @@
 /*@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,600');*/
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:200,300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Space+Grotesk:200,300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
-@import url('https://fonts.googleapis.com/css?family=Flow+Circular');
-@import url('https://fonts.googleapis.com/css?family=Fraunces:300,400,500,700');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:200,300,400,500,600,700');*/
+/*@import url('https://fonts.googleapis.com/css?family=Space+Grotesk:200,300,400,500,600,700');*/
+/*@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');*/
+/*@import url('https://fonts.googleapis.com/css?family=Flow+Circular');*/
+/*@import url('https://fonts.googleapis.com/css?family=Fraunces:300,400,500,700');*/
 
 @font-face {
   font-family: HKGrotesk;
@@ -42,17 +42,17 @@ body::-webkit-scrollbar{
           7.5px 7.5px 38px rgba(0, 0, 0, 0.13);
           /*21px 21px 75px rgba(0, 0, 0, 0.22);*/
   --highlight:
-          0.5px 0.5px 10.5px rgba(255, 255, 255, 0.10),
-          2px 2px 15px rgba(255, 255, 255, 0.15),
-          3.5px 3.5px 20px rgba(255, 255, 255, 0.18),
-          7.5px 7.5px 38px rgba(255, 255, 255, 0.22);
+          0.5px 0.5px 10.5px rgba(255, 255, 255, 0.12),
+          2px 2px 15px rgba(255, 255, 255, 0.18),
+          3.5px 3.5px 20px rgba(255, 255, 255, 0.22),
+          7.5px 7.5px 38px rgba(255, 255, 255, 0.32);
   --font-biggest: 3.2rem;
   --font-big: 1.8rem;
   --font-med: 1.5rem;
   --font-small-med: 1.3rem;
-  --font-small: 1.2rem;
+  --font-small: 1.1rem;
   --border: 1px solid #757575;
-  --border-dashed: 2px dashed #757575;
+  --border-dashed: 1px dashed #757575;
 }
 
 h1 {
@@ -74,10 +74,10 @@ p {
   margin: 15px;
   letter-spacing: -0.02rem;
   text-align: justify;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
+  /*-ms-hyphens: auto;*/
+  /*-moz-hyphens: auto;*/
+  /*-webkit-hyphens: auto;*/
+  /*hyphens: auto;*/
 }
 
 a {
@@ -106,9 +106,6 @@ a {
   overflow: scroll;
   /*padding-bottom: 400px;*/
 }
-/*.page-full::-webkit-scrollbar {*/
-/*  display: none;*/
-/*}*/
 .page-full > h1 {
   font-size: var(--font-biggest);
   margin: 30% 9% 50px;
@@ -123,6 +120,14 @@ a {
   font-size: var(--font-med);
 }
 
+.page-full::-webkit-scrollbar {
+  display: block;
+  width: 1em;
+  height: 2em;
+}
+.page-full::-webkit-scrollbar-thumb {
+  background: #414141;
+}
 
 
 

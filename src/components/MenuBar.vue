@@ -7,6 +7,7 @@
             :x="xy[0]*19 -35"
             :y="xy[1]*19 -40" />
     </router-link>
+
     <div id="menu">
 <!--      <star v-for="i in 5" :key="'bullet'+i" :x="16" :y="18*i-5"/>-->
 <!--      <stud v-for="i in 5" :key="'bullet'+i" :x="14" :y="18.3*i-6"/>-->

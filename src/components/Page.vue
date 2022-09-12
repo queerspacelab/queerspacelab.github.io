@@ -4,28 +4,48 @@
 <!--                   height: '100%',-->
 <!--                   transform: isMouseOver? 'translateX(' + (5 + ww * width/400-100) + '%)': 'translateX(' + (ww * width/400-100) + '%)'}"-->
 <!--  >-->
+<!--  <div class="page-wrapper"-->
+<!--       @mouseenter = "isMouseOver = !($route.params.project || $route.params.page)"-->
+<!--       @mouseleave = "isMouseOver = false"-->
+<!--       :style="{ left: left + 'px',-->
+<!--                 zIndex: isMouseOver? 999 :index}"-->
+<!--  >-->
   <div class="page-wrapper"
        @mouseenter = "isMouseOver = !($route.params.project || $route.params.page)"
        @mouseleave = "isMouseOver = false"
        :style="{ left: left + 'px',
-                 height: '100%',
                  zIndex: isMouseOver? 999 :index}"
   >
+<!--    @click="emitClickedIndex(index)"-->
     <router-link tag="div" class="tag"
                  :to="'/project/' + index"
                  @click="emitClickedIndex(index)"
                  :style="{top: nameTagPos + '%', left: '100%'}">
+
       <p>{{ title_short }}</p>
+
     </router-link>
+
+<!--    <div class="tag"-->
+<!--                 @mousedown.prevent="moveActive=true"-->
+<!--                 @mousemove="moveXY($event)"-->
+<!--                 @mouseup="moveActive=false"-->
+<!--                 @mouseleave="moveActive=false"-->
+<!--                 :style="{top: nameTagPos + '%', left: '100%'}">-->
+<!--      <p>{{ title_short }}</p>-->
+<!--    </div>-->
 
     <router-link tag="div" class="page"
                  v-show="$route.params.project != index"
                  v-html="abstract"
                  :to="'/project/' + index"
-                 :style="{ width: width + 'px'}"
+                 :style="{ width: width + 'px', height: 'calc(100vh - 30px)'}"
     />
 
-    <!--    <svg style="position: absolute; height: 100%; width: 100%;">-->
+<!--    <div class="img-container" :style="{ width: width + 'px'}">-->
+<!--      <img :src="'/images/' + img">-->
+<!--    </div>-->
+<!--        <svg style="position: absolute; height: 100%; width: 100%;">-->
 <!--      <text v-for="i in Math.floor(wh/10)"-->
 <!--            :font-size="(wh/Math.round(wh/10)*0.8) + 'px'"-->
 <!--            font-family="IBM Plex Mono"-->
@@ -73,6 +93,9 @@ export default {
       nameTagPos: '',
       interval: false,
       isMouseOver: false,
+      moveActive: false,
+      x: 0,
+      y: 0,
       // left_this: 0,
       // width_this: 200,
       // transform: {
@@ -96,6 +119,13 @@ export default {
     // getImage(path){
     //   return require('../assets/images/' + path);
     // },
+    moveXY(e){
+      if(this.moveActive) {
+        e.preventDefault();
+        this.x += e.movementX
+        this.y += e.movementY
+      }
+    },
 
     emitClickedIndex(i) {
       this.$emit("clickedIndex", i);
@@ -137,16 +167,19 @@ export default {
     letter-spacing: -1px;
     margin: 10px 30px;
     text-shadow: 0 0 15px black;
+    text-justify: newspaper;
   }
 
   .page {
+    display: flex;
+    flex-direction: column;
     padding-top: 15px;
     padding-bottom: 15px;
     vertical-align: center;
     position: relative;
     background: white;
     box-shadow: var(--shadow);
-    text-align: justify;
+    text-align: left;
     color: white;
     cursor: pointer;
     overflow-y: scroll;
@@ -159,27 +192,26 @@ export default {
   }
   .page-wrapper {
     position: absolute;
-    display: flex;
-    flex-direction: row;
+    /*display: flex;*/
+    flex-direction: column;
     /*z-index: 99;*/
-
     /*overflow-y: scroll;*/
     /*-ms-overflow-y: scroll;*/
     overflow-x: visible;
     -ms-overflow-x: visible;
   }
-
   :deep() img {
     position: relative;
     align-self: center;
     width: 100%;
+    margin: 0 auto;
     /*max-width: calc(100% - 28px);*/
     filter: grayscale(100%) contrast(200%) brightness(95%);
     opacity: 0.75;
     box-shadow: var(--shadow);
   }
   .page-wrapper:hover{
-    transform: translateX(15px);
+    transform: translateX(5px);
   }
   .page-wrapper:hover :deep() .page > p {
     transition: 0.5s ease-in-out;
@@ -206,9 +238,8 @@ export default {
     color: white;
     position: absolute;
     box-shadow: var(--highlight);
-    cursor: pointer;;
+    /*cursor: move;*/
   }
-
 .tag > p {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;

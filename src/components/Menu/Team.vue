@@ -19,7 +19,9 @@
         <div class="pronouns"> {{ content.pronouns }} </div>
         <transition name="swipe-down">
           <div v-if="content.author===showBio" class="bio">
-            <p>{{ content.bio }}</p>
+            <p>{{ content.bio }}</p><br>
+            <a target="_blank" :href="content.url">{{ content.urlType }}</a>
+
           </div>
         </transition>
       </div>
@@ -71,22 +73,32 @@ h1 {
   color: #ffffff;
   text-shadow: 0 0 3px #222;
 }
+.member {
+  padding: 0 15px;
+}
 .bio {
   overflow: hidden;
   width: 100%;
+  margin-bottom: 15px;
+  color: #666;
   /*padding-right: ;*/
 }
 
-
+.bio > a {
+  color: #666;
+}
 h2 {
   cursor: pointer;
   /*color: #ffffff;*/
   /*text-shadow: 0 1px 6px #222;*/
-  /*font-stretch: extra-expanded;*/
+  text-decoration: underline #999;
+  /*text-decoration-color: #666;*/
 }
+
 h2:hover {
-  transition: 0.4s ease-in-out;
-  color: #333;
+  transition: 0.3s ease-in-out;
+  color: whitesmoke;
+  text-shadow: 0 1px 6px #222;
 }
 p {
   margin: 0 auto;

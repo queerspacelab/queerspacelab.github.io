@@ -4,35 +4,53 @@
     "title": "student",
     "pronouns": "she/her",
     "bio": "Doris is an architectural and urban designer originally from Guangzhou, China. She received a B.Arch degree from the University of Southern California and worked as a designer specializing in sports and entertainment venue design before joining MIT. Doris is currently pursuing her master's degree in Urbanism (SMArchS). Her research interests fall in spatial, social, and political discussion on the urban scape, especially on civic participation, gender, and sexuality. She is keen on utilizing design thinking to guide the research, integrating writing, drawing, and curating methods into the process.",
-    "link": "mailto:duanmu@mit.edu"
+    "url": "mailto:duanmu@mit.edu",
+    "urlType": "mail"
   },
   {
     "author": "Felix Li",
     "title": "student",
     "pronouns": "he/him",
     "bio": "Felix Li is currently studying Art and Design, and Comparative Media Studies at MIT.",
-    "link": "mailto:felixli@mit.edu"
+    "url": "mailto:felixli@mit.edu",
+    "urlType": "mail"
   },
   {
     "author": "Merve Akdogan",
     "title": "student",
     "pronouns": "they/them",
     "bio": "An interdisciplinary designer and architect, Merve Akdogan works in the areas of computational design, visualization, architectural design, public art, exhibition design and so on. They assess the ideas they deal with in their personal art practice and works in the context of body-space relationship based on cultural diversity, queer theories, bodily existence, bodily modifications, and their relationships with spatial aspects. In addition to their professional practices in architecture and design. They continued to work as tattoo artists in this setting, and more recently, their research interests have shifted to on-skin and wearable technologies. Human-self, human-community, human-biological organisms, human-body, body-physical space, body-virtual space, interactive extensions, wearable technologies, ecological thinking, cyborg manifestos, and queer spaces are among the subjects and relationships they discuss. They place a strong emphasis on regenerative responses to societal and cultural variations.",
-    "link": "https://merve.work/"
+    "url": "https://merve.work/",
+    "urlType": "personal website"
   },
   {
     "author": "Tj Bayowa",
     "title": "student",
     "pronouns": "he/him",
     "bio": "Tj is a student pursuing a master degree in architecture at MIT.",
-    "link": "https://mywebsite.com (if any)"
+    "url": ""
   },
   {
     "author": "Mingjia Chen",
     "title": "student",
     "pronouns": "they/he",
     "bio": "Mingjia Chen is a graduate student currently completing their Master of Architecture at the MIT Department of Architecture.",
-    "link": "https://mywebsite.com (if any)"
+    "url": ""
+  },
+  {
+    "author": "Caroline Chea",
+    "title": "student",
+    "pronouns": "she/they",
+    "bio": "Caroline Chea is a rising sophomore at MIT, majoring in course 11-6 (Urban Science and Planning with Computer Science). She is interested in how the structure of spaces shapes individual and community experiences. In the Queer Space Lab, Caroline is especially curious about exploring how different online platforms shape the queer (especially asexual) individual and community experiences. Additionally, Caroline dedicates time to building and maintaining personal and institutional archives. She has studied bookbinding technologies and archival practices in the Wunsch Conservation Lab.",
+    "url": ""
+  },
+  {
+    "author": "Nina (Yihong) Li",
+    "title": "student",
+    "pronouns": "she/her",
+    "bio": "Nina (Yihong) Li is a class of 2024 undergrad student double majoring in architecture and literature. She grew up in Qingdao, China and moved to New Jersey when she was 12 years old. She is intrigued by visual art, history, aesthetics, existential philosophy, or any mixture of those. She has a background in 2D art-making and has a wide range of interest from exploring interactive spatial designs to appreciating fat, furry cats.",
+    "url": "https://www.linkedin.com/in/nina-yihong-li-b3101b228/",
+    "urlType": "LinkedIn"
   }
 ]
 
