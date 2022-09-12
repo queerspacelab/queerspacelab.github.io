@@ -77,7 +77,7 @@ export default {
     left: Number,
     width: Number,
     img: String,
-    isActive: Boolean,
+    // isActive: Boolean,
     // topLeft: Array,
     // topRight: Array,
     // bottomLeft: Array,
@@ -199,6 +199,8 @@ export default {
     /*-ms-overflow-y: scroll;*/
     overflow-x: visible;
     -ms-overflow-x: visible;
+    transition: 0.5s left ease;
+
   }
   :deep() img {
     position: relative;

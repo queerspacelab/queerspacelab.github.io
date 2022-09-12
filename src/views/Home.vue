@@ -19,7 +19,6 @@
              :id="'page'+i"
              :key="'page'+i"
              :index="i"
-             :isActive="i === clickedIndex"
              :title_short="content.title_short"
              :author="content.author"
              :abstract="content.abstract"
@@ -28,13 +27,13 @@
              :left="layout.pageLeft[i]"
       />
     </transition-group>
-      <magnifying-glass
-          v-show="!$route.params.page"
-          @mouseXY="updateGlassXY($event)"
-          :abstract = "magnified"
-          :x_init = "glassXY[0]"
-          :y_init = "glassXY[1]"
-      />
+<!--      <magnifying-glass-->
+<!--          v-show="!$route.params.page"-->
+<!--          @mouseXY="updateGlassXY($event)"-->
+<!--          :abstract = "magnified"-->
+<!--          :x_init = "glassXY[0]"-->
+<!--          :y_init = "glassXY[1]"-->
+<!--      />-->
 <!--    </div>-->
 
 <!--    <div id="star-wrapper">-->
@@ -73,7 +72,7 @@ import About from "@/components/Menu/About";
 import Acknowledgement from "@/components/Menu/Acknowledgement";
 import Future from "@/components/Menu/Future";
 import Team from "@/components/Menu/Team";
-import MagnifyingGlass from "@/components/MagnifyingGlass";
+// import MagnifyingGlass from "@/components/MagnifyingGlass";
 import Projects from "@/components/Projects";
 // import Column from "@/components/Column";
 
@@ -92,7 +91,7 @@ export default {
     // Stud,
     // Star,
     // Column,
-    MagnifyingGlass,
+    // MagnifyingGlass,
     Page,
     Footer,
   },
