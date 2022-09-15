@@ -11,19 +11,17 @@
 <!--                 zIndex: isMouseOver? 999 :index}"-->
 <!--  >-->
   <div class="page-wrapper"
-       @mouseenter = "isMouseOver = !($route.params.project || $route.params.page)"
+       @mouseenter = "isMouseOver = true"
        @mouseleave = "isMouseOver = false"
-       :style="{ left: left + 'px',
-                 zIndex: isMouseOver? 999 :index}"
+       :style="{ left: isMouseOver ? (left+30) + 'px' : left + 'px',
+                 zIndex: isMouseOver ? 999 :index,
+                 transform: isMouseOver ? 'translateX(8px)': 'translateX(0)'}"
   >
 <!--    @click="emitClickedIndex(index)"-->
     <router-link tag="div" class="tag"
                  :to="'/project/' + index"
-                 @click="emitClickedIndex(index)"
                  :style="{top: nameTagPos + '%', left: '100%'}">
-
       <p>{{ title_short }}</p>
-
     </router-link>
 
 <!--    <div class="tag"-->
@@ -40,25 +38,32 @@
                  v-html="abstract"
                  :to="'/project/' + index"
                  :style="{ width: width + 'px', height: 'calc(100vh - 30px)'}"
-    />
+    >
+
+<!--      <div class="strip-container" :style="{position: 'absolute', height: $el.scrollHeight, width: '100%'}">-->
+<!--        <svg :style="{position: 'relative', height: '100%', width: '100%'}">-->
+<!--          <text v-for="i in Math.floor($el.scrollWidth/10)"-->
+<!--                :font-size="(wh/Math.round($el.scrollHeight/10)*0.8) + 'px'"-->
+<!--                font-family="IBM Plex Mono"-->
+<!--                font-weight="800"-->
+<!--                :key="'glyph'+index+i"-->
+<!--                x='97.5%'-->
+<!--                :y="100/Math.floor($el.scrollHeight/10)*i+'%'">-->
+<!--            &lt;!&ndash;            ✸&ndash;&gt;-->
+<!--            &lt;!&ndash;          ｜&ndash;&gt;-->
+<!--            ‖-->
+<!--          </text>-->
+<!--        </svg>-->
+<!--      </div>-->
+
+    </router-link>
 
 <!--    <div class="img-container" :style="{ width: width + 'px'}">-->
 <!--      <img :src="'/images/' + img">-->
 <!--    </div>-->
-<!--        <svg style="position: absolute; height: 100%; width: 100%;">-->
-<!--      <text v-for="i in Math.floor(wh/10)"-->
-<!--            :font-size="(wh/Math.round(wh/10)*0.8) + 'px'"-->
-<!--            font-family="IBM Plex Mono"-->
-<!--            font-weight="800"-->
-<!--            :key="'glyph'+index+i"-->
-<!--      x='2.5%'-->
-<!--      :y="100/Math.floor(wh/10)*i+'%'">-->
-<!--&lt;!&ndash;            ✸&ndash;&gt;-->
-<!--          ｜-->
-<!--&lt;!&ndash;          ‖&ndash;&gt;-->
-<!--      </text>-->
-<!--    </svg>-->
   </div>
+<!--  </div>-->
+<!--  </div>-->
 
 </template>
 
@@ -71,17 +76,23 @@ export default {
     index: Number,
     title_short: String,
     // author: String,
-    layout: Object,
+    // layout: Object,
     contents: Array,
     abstract: String,
     left: Number,
     width: Number,
+    interval: Number,
     img: String,
     // isActive: Boolean,
     // topLeft: Array,
     // topRight: Array,
     // bottomLeft: Array,
     // bottomRight: Array,
+  },
+  computed: {
+    left_this() {
+      return this.left
+    }
   },
   data() {
     return {
@@ -91,7 +102,6 @@ export default {
       // mouseX: '-500px',
       // mouseY: '-500px',
       nameTagPos: '',
-      interval: false,
       isMouseOver: false,
       moveActive: false,
       x: 0,
@@ -110,7 +120,7 @@ export default {
     // console.log(this.title_stringified);
     // this.left_this = this.left
     // this.width_this = this.width
-    this.nameTagPos = (50 - (-1)**this.index*(1+Math.random())*15)
+    this.nameTagPos = (45 + (-1)**this.index*(1+Math.random())*15)
     // this.wh = window.innerHeight;
     // this.ww = window.innerWidth;
   },
@@ -119,55 +129,30 @@ export default {
     // getImage(path){
     //   return require('../assets/images/' + path);
     // },
-    moveXY(e){
-      if(this.moveActive) {
-        e.preventDefault();
-        this.x += e.movementX
-        this.y += e.movementY
-      }
-    },
-
+    // moveXY(e){
+    //   if(this.moveActive) {
+    //     e.preventDefault();
+    //     this.x += e.movementX
+    //     this.y += e.movementY
+    //   }
+    // },
     emitClickedIndex(i) {
       this.$emit("clickedIndex", i);
     }
-
   },
-  // computed: {
-  //   left_animated: function() {
-  //     return this.left_this.toFixed(0);
-  //   },
-  //   width_animated: function() {
-  //     return this.width_this.toFixed(0);
-  //   }
-  // },
-  watch: {
-    // left: function(d) {
-    //   gsap.to(this.$data,{ duration: 1000, left_this: d });
-    // },
-    // width: function(d) {
-    //   gsap.to(this.$data,{ duration: 1000, width_this: d });
-    // },
-
-    // width: function () {
-    //   let width_ = this.width
-    //   this.tween(width_, this.width)
-    // }
-    // width: function(d) {
-    //   this.width_this = d;
-    // }
-  }
 }
 </script>
 
 <style scoped>
   :deep() p {
-    font-family: "IBM Plex Mono", sans-serif;
-    font-weight: 300;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
     font-size: var(--font-small);
     letter-spacing: -1px;
     margin: 10px 30px;
     text-shadow: 0 0 15px black;
     text-justify: newspaper;
+    hyphens: auto;
   }
 
   .page {
@@ -193,13 +178,13 @@ export default {
   .page-wrapper {
     position: absolute;
     /*display: flex;*/
-    flex-direction: column;
+    /*flex-direction: column;*/
     /*z-index: 99;*/
     /*overflow-y: scroll;*/
     /*-ms-overflow-y: scroll;*/
     overflow-x: visible;
     -ms-overflow-x: visible;
-    transition: 0.5s left ease;
+    transition: 0.5s left ease, 0.5s z-index;
 
   }
   :deep() img {
@@ -211,10 +196,13 @@ export default {
     filter: grayscale(100%) contrast(200%) brightness(95%);
     opacity: 0.75;
     box-shadow: var(--shadow);
+    overflow-x: visible;
+    -ms-overflow-x: visible;
+
   }
-  .page-wrapper:hover{
-    transform: translateX(5px);
-  }
+  /*.page-wrapper:hover{*/
+  /*  transform: translateX(8px);*/
+  /*}*/
   .page-wrapper:hover :deep() .page > p {
     transition: 0.5s ease-in-out;
     color: black;
@@ -243,13 +231,19 @@ export default {
     /*cursor: move;*/
   }
 .tag > p {
-  font-family: "IBM Plex Mono", monospace;
+  /*font-family: "IBM Plex Mono", monospace;*/
   font-weight: 400;
   font-size: var(--font-small-med);
   text-shadow: 0 0 8px #c9c9c9;
   margin: 10px 20px;
 }
   svg {
+    z-index: 999;
+    padding: 0;
+    margin: 0;
+  }
+  .strip-container {
+    z-index: 999;
     padding: 0;
     margin: 0;
   }

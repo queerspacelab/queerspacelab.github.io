@@ -65,7 +65,7 @@ h1 {
   height: 150px;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  padding: 9%;
+  padding: 0 9%;
 }
 .pronouns {
   margin-bottom: 1rem;
@@ -84,7 +84,15 @@ h1 {
   /*padding-right: ;*/
 }
 
+.bio > p {
+  font-family: HKGroteskReg, sans-serif;
+  font-size: var(--font-small);
+  letter-spacing: -0.1px;
+}
+
 .bio > a {
+  font-family: HKGrotesk, sans-serif;
+  font-size: var(--font-small);
   color: #666;
 }
 h2 {

@@ -1,12 +1,17 @@
 <template>
 <div class="project" id="minor-presence">
+  <img src="/images/minor_presence_0.jpg">
+  <p class="caption">
+    Tejumola Bayowa and Mingjia Chen, The Library is our Crib, 2022. Courtesy iStock Photos and McDonald’s.
+  </p>
+
   <h3>Introduction</h3>
   <p>
-    There are two ways of reading institutions. The first way is the “image” of the institution. The image is the official way an institution wishes to be read by the public. The second way of reading an institution is through its “presence.”<sup>1</sup> Presence is the reciprocal relationship and shaping between the institution and those interacting with it. The latter relationship of presence is often unacknowledged because it troubles the logical reading of an institution's image.
+    There are two ways of reading institutions. The first way is the “image” of the institution. The image is the <i>official</i> way an institution wishes to be read by the public. The second way of reading an institution is through its “presence.”<sup>1</sup> Presence is the reciprocal relationship and shaping between the institution and those interacting with it. The latter relationship of presence is often unacknowledged because it troubles the logical reading of an institution's image.
   </p><p>
   The library as an institution is par excellence an archival space dedicated to the official telling of history and distribution of information.
 </p><p>
-  The first library in the United States intended to serve undergraduates is Harvard’s Lamont Library.<sup>2</sup> By using it as a case study, this project seeks to queer the official role of the library by studying its presence rather than its image. This shift in legibility allows for a more pluralistic understanding of history and identity that is broader in its narrative.
+  The first library in the United States intended to serve undergraduates is Harvard’s Lamont Library.<sup>2</sup> By using it as a case study, this project seeks to queer the official role of the library by studying its <i>presence</i> rather than its <i>image</i>. This shift in legibility allows for a more pluralistic understanding of history and identity that is broader in its narrative.
 </p><p>
   This initial part of our project is the first trip into a series of questions we are engaging with about the institutional library as a space. It is divided into 5 reflections. In reflection 1, we discussed our use of a queer methodology through the frame of the minor. Reflections 2 and 3 gave a brief historical account of the library as an institutional space and looked into Harvard’s Lamont library as a case study. Reflection 4 helps us to pin down a few key definitions. Through the framework of the minor, we introduce the distinction between the image of a space and its presence. To conclude we reflect on the potentialities that come from remixing, reordering, and redistributing the popular.<sup>3</sup>
 </p><p>
@@ -87,11 +92,11 @@
   <div class="footnote">
     <hr>
     <p>
-      4 Yapp, Minor China, 1 - 36.
+      4 Yapp, <i>Minor China</i>, 1 - 36.
     </p><p>
-    5 Yapp, Minor China, 23.
+    5 Yapp, <i>Minor China</i>, 23.
   </p><p>
-    6 Yapp, Minor China, 6.
+    6 Yapp, <i>Minor China</i>, 6.
   </p><p>
     7 From an anonymous source.
   </p><p>
@@ -142,16 +147,18 @@
   The academic library, on the other hand, faces a different contradiction around its uses. Students who need a productive workspace would make the academic library their “crib.”<sup>18</sup>   Productivity does not only entail intensive periods of scholarly activities, it also includes the in-betweens of the working sessions, such as using the bathroom, eating, taking a nap, and scrolling their smartphones. Such uses have existed since the establishment of Harvard’s Lamont Library in 1949, the first American academic library dedicated to (male) undergraduate students.<sup>19</sup>
 </p>
   <img src="/images/minor_presence_1.jpg">
-  <p class="caption">UAV 605 (HC 326) Students reading in Farnsworth Room, ca. 1954. Source: Harvard University Archives.</p>
+  <p class="caption">
+    UAV 605 (HC 326) Students reading in Farnsworth Room, ca. 1954. <sup>20</sup>
+  </p>
   <p>
-    However, it was not until recently that the institutions started to rethink the library as a space beyond being a repository for archives. As the architect and library planning specialist Geoffery T. Freeman suggests, the academic library has been traditionally planned to prioritize the processing of archival resources and materials. However, as the institution shifts its paradigm from a teaching-based pedagogy into a learning-based one, such programming would no longer meet the students’ ever-evolving needs. With the increasing digitalization of archival materials, the students need a place where she “gets serious,” and one which “enables [her] to advance [her] learning experiences.”<sup>20</sup>
-    Further, by anticipating students’ social uses, Freeman contends that the newly designed academic library should reflect and enhance the vision (or what we could call an official image) of its hosting institution.<sup>21</sup>
+    However, it was not until recently that the institutions started to rethink the library as a space beyond being a repository for archives. As the architect and library planning specialist Geoffery T. Freeman suggests, the academic library has been traditionally planned to prioritize the processing of archival resources and materials. However, as the institution shifts its paradigm from a teaching-based pedagogy into a learning-based one, such programming would no longer meet the students’ ever-evolving needs. With the increasing digitalization of archival materials, the students need a place where she “gets serious,” and one which “enables [her] to advance [her] learning experiences.”<sup>21</sup>
+    Further, by anticipating students’ social uses, Freeman contends that the newly designed academic library should reflect and enhance the vision (or what we could call an official image) of its hosting institution.<sup>22</sup>
   </p><p class="tb">
   TB: the intention of the library as furthering the institutions image is a point i find interesting and discussed briefly as well. interested in finding more evidence for this claim.
 </p><p class="mc">
   MC: And interested in how successful this image-building has been
 </p><p>
-  We see that the question of the library’s social uses (such as providing access to technology, sanitary infrastructures, and living spaces) which has been under critical discussion in the realm of public policy has been appropriated by the institution to build its new image as a space of diversity and inclusion. Does this mean that the academic library has become truly accessible? Some suggest that for students, especially freshmen, the poster-child library of an institution can still be very intimidating.<sup>22</sup>
+  We see that the question of the library’s social uses (such as providing access to technology, sanitary infrastructures, and living spaces) which has been under critical discussion in the realm of public policy has been appropriated by the institution to build its new image as a space of diversity and inclusion. Does this mean that the academic library has become truly accessible? Some suggest that for students, especially freshmen, the poster-child library of an institution can still be very intimidating.<sup>23</sup>
   Students are haunted by the dominant and legible image that has been condensed from the eurocentric historical traditions of higher institutions, and the enlightenment. An academic deterrence. An almost forbidden site of secrecy.
 </p><p class="tb">
   TB: is the institutional library public/accessible? not in its image but in its presence it has been utilized as one.
@@ -159,9 +166,10 @@
   MC: This is a good point to consider - I think that when thinking about presence we also need to look at what this means for those who are denied service. I remember that on crimson one student mentioned that the Lamont library is a good place to be away from the "homeless" on campus at 3 AM - what does this say about presence?
 </p>
   <img class="center" src="/images/minor_presence_2.jpeg">
-  <p class="caption">Image source: McDonald's.</p>
+  <p class="caption">
+    McDonald’s <i>Menu Hack</i>, 2021. Source: McDonald’s via The Washington Post.</p>
   <p>
-    In fact, we feel that there is a sense of intimacy between the student and their library of choice. Such intimacy is not established through the permission and anticipation of uses established by the institution. Rather, it is accomplished precisely because the student finds this place between the image of solemness and the loosely regulated reality inhabitable. In other words, it is not the best choice, but it is worth the time for what it provides. It is what it is, like finding salad as a “healthy” option at a fried chicken joint.<sup>23</sup> Yet, something feels off when the institution cuts into this in-between space and consumes it as part of its ever growing official image - I keep thinking about the overpriced Mcdonald's “menu hacks” which took inspiration from people creatively interpreting their regular offerings.<sup>24</sup>
+    In fact, we feel that there is a sense of intimacy between the student and their library of choice. Such intimacy is not established through the permission and anticipation of uses established by the institution. Rather, it is accomplished precisely because the student finds this place between the image of solemness and the loosely regulated reality inhabitable. In other words, it is not the best choice, but it is worth the time for what it provides. It is what it is, like finding salad as a “healthy” option at a fried chicken joint.<sup>24</sup> Yet, something feels off when the institution cuts into this in-between space and consumes it as part of its ever growing official image - I keep thinking about the overpriced Mcdonald's “menu hacks” which took inspiration from people creatively interpreting their regular offerings.<sup>25</sup>
   </p><p class="tb">
   TB: well put
 </p><p class="tb">
@@ -194,15 +202,17 @@
     </p><p>
       19 <a target="_blank" href="http://libraryhistory.pbworks.com/w/page/16964653/Lamont%20Library">link</a>
     </p><p>
-      20 Geoffery T. Freeman, AIA, “The Library as a Place: Changing in Learning Patterns, Collections, Technology and Use,” in Library as a Space: Rethinking Roles, Rethinking Place, 3.
+      20 Students reading in Farnsworth Room, 1954, UAV605 (HC 326), Harvard University Archives, Harvard University, Cambridge, MA.<a target="_blank" href="http://id.lib.harvard.edu/images/olvwork369125/catalog">link</a>
     </p><p>
-      21 Geoffery Freeman, “The Library as a Place,” 7.
+      21 Geoffery T. Freeman, AIA, “The Library as a Place: Changing in Learning Patterns, Collections, Technology and Use,” in Library as a Space: Rethinking Roles, Rethinking Place, 3.
     </p><p>
-      22 From a warm and friendly anonymous source.
+      22 Geoffery Freeman, “The Library as a Place,” 7.
     </p><p>
-      23 If you ignore the sauces, of course.
+      23 From a warm and friendly anonymous source.
     </p><p>
-      24 <a target="_blank" href="https://www.washingtonpost.com/food/2022/02/08/mcdonalds-menu-hacks-review/">link</a>
+      24 If you ignore the sauces, of course.
+    </p><p>
+      25 <a target="_blank" href="https://www.washingtonpost.com/food/2022/02/08/mcdonalds-menu-hacks-review/">link</a>
     </p>
   </div>
 
@@ -235,7 +245,7 @@
   MC: This is so true and relatable. I had to stay close to my undergraduate university this summer, and whenever I could, I tried to access student-only services by showing them the front of my expired student card.
 </p><p>
   In this endeavor the university should not and cannot be mistaken as a space of truth and enlightenment. This truth founded and maintained by the university is the basis of professionalization. The university is the training camp for the state and it is the facility in which professionals are pumped out to continue the state’s mission for growth and global empowerment. The State is fraught with its ambitions of generating a worldview in support of its ambitions of unchecked growth, knowledge, and power.
-  Although the university <i>imagizes</i><sup>25</sup> itself as humanitarian in its ambitions, there is no denying its complicity and support of the States globalizing and totalitarian ambitions.
+  Although the university <i>imagizes</i><sup>26</sup> itself as humanitarian in its ambitions, there is no denying its complicity and support of the States globalizing and totalitarian ambitions.
 </p><p>
   The question then is what do we do for those of us that find ourselves uneasy in our relationship with the University — those unwilling to continue down the lane of professionalization. Perhaps those spaces which we fear, those spaces which we hesitate to enter, are the spaces our presence needs to venture. Full advantage should be taken of the hospitality which the University provides to maintain its humanitarian image. Moving along those shelves are spaces for refuge, not fear.
 </p>
@@ -253,7 +263,7 @@
   </p><p class="tb">
   TB: this led to my thinking for my reflection in terms of fear and respect of the institution
 </p><p>
-  The viral myth, circulating mainly through online chat groups such as WeChat and QQ messenger, has only been debunked recently. It had spawned a constellation of motivational materials including books and speeches and had become a specter that incessantly haunted my generation growing up. Think about the tiger mom - the stereotypical East Asian strictness on their kids’ educational careers.<sup>26</sup>
+  The viral myth, circulating mainly through online chat groups such as WeChat and QQ messenger, has only been debunked recently. It had spawned a constellation of motivational materials including books and speeches and had become a specter that incessantly haunted my generation growing up. Think about the tiger mom - the stereotypical East Asian strictness on their kids’ educational careers.<sup>27</sup>
   One feature of the “4 a.m Harvard Library myth” is of particular interest to me. The rumor circulates mainly through the constant reposting of an image “of the Harvard students working hard in their library, their desks all lit up.” The image was eventually proved to be a generic image sourced online.
 </p><p class="tb">
   TB: the generic image . theres something i find interesting about this
@@ -266,13 +276,13 @@
   <p class="tb">
   TB: lol
 </p><p>
-  It was fun to speak with someone from the other side - and we learned that many Harvard undergraduate students were intimidated by the Widener Library because they constantly encounter visitors who’d fetishize their existence as “godly,” while they were struggling to find an uninterrupted space to work, slack or just hang out.<sup>27</sup>  Slightly ironically, the Widener Library was historically intended for graduate students, and the undergraduates - glorified as they are - did not have a library space dedicated to them until the establishment of the Lamont.<sup>28</sup> Harvard’s institutional image which was predicated on colonial knowledge production of the European academy has morphed partially into real and felt pressure on the majority of its community - the students. In addition to asking whether the presence of the institutional library is different from its official image, we could subsequently ask: Does the image of the institution have its own presence?
+  It was fun to speak with someone from the other side - and we learned that many Harvard undergraduate students were intimidated by the Widener Library because they constantly encounter visitors who’d fetishize their existence as “godly,” while they were struggling to find an uninterrupted space to work, slack or just hang out.<sup>28</sup>  Slightly ironically, the Widener Library was historically intended for graduate students, and the undergraduates - glorified as they are - did not have a library space dedicated to them until the establishment of the Lamont.<sup>29</sup> Harvard’s institutional image which was predicated on colonial knowledge production of the European academy has morphed partially into real and felt pressure on the majority of its community - the students. In addition to asking whether the presence of the institutional library is different from its official image, we could subsequently ask: Does the image of the institution have its own presence?
 </p><p class="tb">
   TB: mmm. this flip is interesting. my instinct is yes, it does. a presence sustained through myth (like the image above) and "authentic" systems like school rankings, alumni lists etc. interested in what you think
 </p><p class="mc">
   MC: I would also think that it does, but we can keep it an open question. I think the image has its weight, and realness in a way. It can have its positive effects in that one could be inspired by it - it partly excludes people from the elite institution, partly fuels peoples' fascination with it.
 </p><p>
-  Such an image certainly has its presence for me - as soon as I arrived in Cambridge and registered for everything, I immediately showed up at the Smith Center. I wanted to get my library access card (as a student from a “partner” institution) as soon as possible. The library card, which looks slightly different from other HUIDs, grants you more access than you’d expected. In fact, one of the first open secrets and tips that I heard from students is to get a Harvard library card, so that one could cruise down the otherwise chaotic Massachusetts Ave in the comfort and exclusivity of the Harvard H2 shuttle. Simply use your thumb to cover the “library” notion on your card when you show it to the bus driver. For a moment Harvard’s exclusive image dissolves into a solution before it precipitates you out again when you are confronted with a magnetic card reader.<sup>29</sup>
+  Such an image certainly has its presence for me - as soon as I arrived in Cambridge and registered for everything, I immediately showed up at the Smith Center. I wanted to get my library access card (as a student from a “partner” institution) as soon as possible. The library card, which looks slightly different from other HUIDs, grants you more access than you’d expected. In fact, one of the first open secrets and tips that I heard from students is to get a Harvard library card, so that one could cruise down the otherwise chaotic Massachusetts Ave in the comfort and exclusivity of the Harvard H2 shuttle. Simply use your thumb to cover the “library” notion on your card when you show it to the bus driver. For a moment Harvard’s exclusive image dissolves into a solution before it precipitates you out again when you are confronted with a magnetic card reader.<sup>30</sup>
 </p><p class="tb">
   TB: never mind the previous question haha you answer it right here
 </p><p class="mc">
@@ -286,23 +296,19 @@
 </p>
 
   <div class="footnote">
-    <hr><p>
-      24
-    <a target="_blank" href="https://www.washingtonpost.com/food/2022/02/08/mcdonalds-menu-hacks-review/">link</a>
-    </p><p>
-    25
-    Imagizes: how it displays itself to the public which contradicts reality.
-    </p><p>
-      26
-    But also it would be interesting to think for a moment about the ostensible classless image of the tiger mom: To engage with and have access to such motivational materials and to desire the institution is to assume a certain bourgeois class position - the tiger mom is the pedagogy of the Chinese middle class.
+    <p>
+    26 imagizes: how it displays itself to the public which contradicts reality.
     </p><p>
       27
-    From an anonymous source.
+    But also it would be interesting to think for a moment about the ostensible classless image of the tiger mom: To engage with and have access to such motivational materials and to desire the institution is to assume a certain bourgeois class position - the tiger mom is the pedagogy of the Chinese middle class.
     </p><p>
       28
-    Ibid.
+    From an anonymous source.
     </p><p>
       29
+    Ibid.
+    </p><p>
+      30
     I am speaking from the perspective of a student from neighboring institution, which had already made Harvard’s image less intimidating - but nonetheless the pressure and nervousness remains.
     </p>
   </div>
@@ -329,7 +335,7 @@
   Axioms for considering Image and Presence in our Research - Mingjia Chen
 </p>
   <p class="bullet">
-  Axiom 1: The official image of the institution does not concern the present. It always anticipates the future (through strategic planning rather than tactical reaction<sup>30</sup>) and is always predicated on its accumulated past.
+  Axiom 1: The official image of the institution does not concern the present. It always anticipates the future (through strategic planning rather than tactical reaction<sup>31</sup>) and is always predicated on its accumulated past.
 </p><p class="tb">
   TB: i think it does concern itself with the present: anticipate and work within the present.
 </p><p class="mc">
@@ -351,7 +357,7 @@
 </p><p class="bullet">
   Axiom 6: Neither the image nor the presence of an institution necessarily carries a moral value, and their structural relationship is complex and multi-layered.
 </p><p class="bullet">
-  <u>A note on the library as an architectural space:</u> Although so far we concern the library only through its structural position within the community it serves, it is important to note that the architectural qualities of a particular library are important for studying its presence - as the architectural design of the library shapes its intended and unintended uses. For example, the sense of privacy of the stacks has historically provided a cruising space.<sup>31</sup>  Another example is the dividers at the Lamont library, which have been creatively adopted by students during COVID to create a pod for taking their masks off.<sup>32</sup>
+  <u>A note on the library as an architectural space:</u> Although so far we concern the library only through its structural position within the community it serves, it is important to note that the architectural qualities of a particular library are important for studying its presence - as the architectural design of the library shapes its intended and unintended uses. For example, the sense of privacy of the stacks has historically provided a cruising space.<sup>32</sup>  Another example is the dividers at the Lamont library, which have been creatively adopted by students during COVID to create a pod for taking their masks off.<sup>33</sup>
 </p><p class="tb">
   TB: this will come in Part 2!
 </p><p>
@@ -360,11 +366,11 @@
   <div class="footnote">
     <hr>
     <p>
-      30 De Certeau, The Practice of Everyday Life, xix.
-    </p><p>
-      31 From an anonymous source.
+      31 De Certeau, The Practice of Everyday Life, xix.
     </p><p>
       32 From an anonymous source.
+    </p><p>
+      33 From an anonymous source.
     </p>
   </div>
   <h3>Reflection 5: <i>The Popular and the Remix</i></h3>
@@ -372,11 +378,11 @@
 <p class="head">
   Remix - Tejumola Bayowa
 </p><p>
-  When dealing with institutional image and presence a minor shift in key is required. This shift is what we are calling remix. To remix an institutional image in musical terms it is to decenter a/piece/stem by reordering the notes to create a new harmony.<sup>33</sup>
+  When dealing with institutional image and presence a minor shift in key is required. This shift is what we are calling remix. To remix an institutional image in musical terms it is to decenter a/piece/stem by reordering the notes to create a new harmony.<sup>34</sup>
 </p><p class="mc">
   MC: So beautifully put.
 </p><p>
-  In simpler terms, it is a tool by which the presence of the institution becomes more recognizable. The term remix is used because it does not require a “new” mode of hearing — but it does require a different mode of listening.<sup>34</sup> It deals with what is existing and making something new from it out of a change in arrangement; the same way in which shuffling an album rather than listening to it in order creates new meanings and connections simply through a change in arrangement.
+  In simpler terms, it is a tool by which the presence of the institution becomes more recognizable. The term remix is used because it does not require a “new” mode of hearing — but it does require a different mode of listening.<sup>35</sup> It deals with what is existing and making something new from it out of a change in arrangement; the same way in which shuffling an album rather than listening to it in order creates new meanings and connections simply through a change in arrangement.
 </p><p class="mc">
   MC: I noticed that on Spotify you could "hide" a particular track in an album and not include it in the order at all
 </p><p class="tb">
@@ -388,7 +394,7 @@
 </p><p class="tb">
   TB: Well said
 </p><p>
-  Through remix, refusal comes out of listening beyond the totalitarian image of the popular by  giving a voice to the subaltern and enlarging the pool of what is considered valuable knowledge. As Tina Campt states while speaking on her book, Listening to Images, “We must instead ‘listen’ to the larger story and attend to the quiet frequencies that surround and infuse these images with meaning.”<sup>35</sup>
+  Through remix, refusal comes out of listening beyond the totalitarian image of the popular by  giving a voice to the subaltern and enlarging the pool of what is considered valuable knowledge. As Tina Campt states while speaking on her book, Listening to Images, “We must instead ‘listen’ to the larger story and attend to the quiet frequencies that surround and infuse these images with meaning.”<sup>36</sup>
 </p><p>
   At the end of the day, the message is the same. Whether queer, minor, or remix, these different theoretical approaches and ways of living call for a rejection of simplistic conclusions and argue for plurality; an embrace of the complexity that shapes our lives.
 </p><p>
@@ -400,23 +406,23 @@
 </p><p class="mc">
   MC: I bought a synthesizer and a launch pad, still need to learn how to use them
 </p><p>
-  Despite my lack of musical knowledge, when talking and thinking about remixing as a practice, a few images pop into my mind. For one, the DJ, spinning their records, skillfully distorting and augmenting the tempo and voices in their hands, smoothly fading in and out the flows of similar or different musical styles. The other image I immediately connect with is the digital producer, chopping up multiple songs on their MacBook only to stitch them into one through editing and overlaying: the skillful re-structuring of the acoustics. I also think about artistic practices that are less auditory than haptic - people who would reinterpret the cultural meaning of an object by rearranging its parts under a different structure.<sup>36</sup>
+  Despite my lack of musical knowledge, when talking and thinking about remixing as a practice, a few images pop into my mind. For one, the DJ, spinning their records, skillfully distorting and augmenting the tempo and voices in their hands, smoothly fading in and out the flows of similar or different musical styles. The other image I immediately connect with is the digital producer, chopping up multiple songs on their MacBook only to stitch them into one through editing and overlaying: the skillful re-structuring of the acoustics. I also think about artistic practices that are less auditory than haptic - people who would reinterpret the cultural meaning of an object by rearranging its parts under a different structure.<sup>37</sup>
 </p><p class="tb">
   TB: less or more auditory?
 </p><p class="mc">
   MC: less?
 </p><p>
-  Drifting off from the latter image of mechanical rearrangement, I wonder: Are Transformers the masters of remixing? It is fascinating to imagine the complex fictional metamorphosis that an earthly piece of machine has to undergo in order to transform itself into a silicone-based visitor from outer space.<sup>37</sup> Driven by the masculine desire to sell a miniature automobile and a robot at once, the toy designers had to reimagine and reinterpret every part of a vehicle as an organ of the cybertronian. The car doors have become their wing, and the gearbox their cannon. Catered to the politics of ideological opposition yet serving the young, Transformers is the skillful remixing of our fascination with and desire for the pure object of speed.<sup>38</sup>
+  Drifting off from the latter image of mechanical rearrangement, I wonder: Are Transformers the masters of remixing? It is fascinating to imagine the complex fictional metamorphosis that an earthly piece of machine has to undergo in order to transform itself into a silicone-based visitor from outer space.<sup>38</sup> Driven by the masculine desire to sell a miniature automobile and a robot at once, the toy designers had to reimagine and reinterpret every part of a vehicle as an organ of the cybertronian. The car doors have become their wing, and the gearbox their cannon. Catered to the politics of ideological opposition yet serving the young, Transformers is the skillful remixing of our fascination with and desire for the pure object of speed.<sup>39</sup>
 </p><p class="tb">
   TB: well said!!
 </p><p>
-  Understood from the image provoked above (very different contexts and situations), remixing as a practice involves the reinterpretation of a particular media, often popular and internalized as “the way to be,” through only rearranging its existing parts under a different, often minor structure. Whether it’s musical production, artistic practice, or the monopoly on children’s toys, the goal of the remix is to produce a different presence as a whole of the same parts. Presences that defy the normative and major understanding of their respective narratives.<sup>39</sup>
+  Understood from the image provoked above (very different contexts and situations), remixing as a practice involves the reinterpretation of a particular media, often popular and internalized as “the way to be,” through only rearranging its existing parts under a different, often minor structure. Whether it’s musical production, artistic practice, or the monopoly on children’s toys, the goal of the remix is to produce a different presence as a whole of the same parts. Presences that defy the normative and major understanding of their respective narratives.<sup>40</sup>
 </p><p class="tb">
   TB: well said ^^
 </p><p>
   Seemingly coming from an oblique angle, I think the logic of the remix helps us as a framework for understanding the materials at hand.
 </p><p>
-  Remixing as a research method, then, could become queer in the sense that it allows us to enter the archival space from an oblique angle.<sup>40</sup>  In our case, the mediums are the various archives that we are engaging / will engage with - the Harvard University archives, the Crimson archives, and in-person conversations. Yet, by examining these pieces of information, we are neither hoping to illustrate a continuous narrative nor produce new knowledge. After all, the information sources we engage with are not unofficial - they do not have the authority to serve as Harvard’s official image, yet they are involved in the construction of such an image.  They are sometimes excluded from it - stories left untold; information left unexamined due to its sources’ lack of institutional power. The information we engage with is already entangled in Harvard’s institutional structure of the image-building machine.
+  Remixing as a research method, then, could become queer in the sense that it allows us to enter the archival space from an oblique angle.<sup>41</sup>  In our case, the mediums are the various archives that we are engaging / will engage with - the Harvard University archives, the Crimson archives, and in-person conversations. Yet, by examining these pieces of information, we are neither hoping to illustrate a continuous narrative nor produce new knowledge. After all, the information sources we engage with are not unofficial - they do not have the authority to serve as Harvard’s official image, yet they are involved in the construction of such an image.  They are sometimes excluded from it - stories left untold; information left unexamined due to its sources’ lack of institutional power. The information we engage with is already entangled in Harvard’s institutional structure of the image-building machine.
 </p><p class="tb">
   TB: 📐
 </p><p class="mc">
@@ -435,21 +441,21 @@
   <div class="footnote">
   <hr>
   <p>
-  33 A combination of the musical word “piece” (a musical composition) and “episteme” (intellectually certain knowledge)
+  34 A combination of the musical word “piece” (a musical composition) and “episteme” (intellectually certain knowledge)
   </p><p>
-  34 To hear is different from listening. Listening requires empathetic and intellectual work on the part of the receiver. Hearing often does not.
+  35 To hear is different from listening. Listening requires empathetic and intellectual work on the part of the receiver. Hearing often does not.
 </p><p>
-  35 <a target="_blank" href="https://barnard.edu/news/listening-images">link</a>
+  36 <a target="_blank" href="https://barnard.edu/news/listening-images">link</a>
 </p><p>
-  36 I want to share a slightly creepy but fun example. A Japanese YouTuber who combines parts of the Thomas toy trains with other mechanical devices to produce uncanny miniature robots. Check it out: https://www.youtube.com/watch?v=yfkgIxu8jX0 It is important to distinguish this image of the remix with narratives of survivalism and improvisation. For a more canonical example, reference Duchamp.
+  37 I want to share a slightly creepy but fun example. A Japanese YouTuber who combines parts of the Thomas toy trains with other mechanical devices to produce uncanny miniature robots. Check it out: https://www.youtube.com/watch?v=yfkgIxu8jX0 It is important to distinguish this image of the remix with narratives of survivalism and improvisation. For a more canonical example, reference Duchamp.
 </p><p>
-  37 Although, most of the time the physical forms of the good ones (autobots) reassembles that of the humanoid - after all, it is a cartoon designed to sell toys while stashing cold-war patriotism to the kids.
+  38 Although, most of the time the physical forms of the good ones (autobots) reassembles that of the humanoid - after all, it is a cartoon designed to sell toys while stashing cold-war patriotism to the kids.
 </p><p>
-  38 Baudrillard, America, 26.
+  39 Baudrillard, America, 26.
 </p><p>
-  39 Yapp, Minor China, 11.
+  40 Yapp, <i>Minor China</i>, 11.
 </p><p>
-  40 Ahmed, Orientations, 560 - 564. To be queer is to see the space from an oblique angle.
+  41 Ahmed, Orientations, 560 - 564. To be queer is to see the space from an oblique angle.
 </p>
 
 </div>
@@ -459,16 +465,16 @@
 </p><p>
   Meanwhile, we continue to reflect on the discrepancy between how the institution preserves its official “image” and how its patrons represent its “presence” (often unacknowledged and silenced by the institution). For instance, the image of the Lamont Library is different from its presence, as testified by various accounts from its associates.
 </p><p>
-  Looking back, we came into this research with an assumption that constitutes a founding error (and a starting point): We started by generalizing the academic library as a monolithic space of knowledge where any form of social use other than accessing its collection is considered unintended. This is uninformed - the discussion on the library’s social uses (sleeping, eating, sanitary, etc) is critically important in public library discussions.<sup>41</sup>  This error is important for us: without it, we were not able to actually look at it with nuance and question the “appropriate” social uses of an institutional library.
+  Looking back, we came into this research with an assumption that constitutes a founding error (and a starting point): We started by generalizing the academic library as a monolithic space of knowledge where any form of social use other than accessing its collection is considered unintended. This is uninformed - the discussion on the library’s social uses (sleeping, eating, sanitary, etc) is critically important in public library discussions.<sup>42</sup>  This error is important for us: without it, we were not able to actually look at it with nuance and question the “appropriate” social uses of an institutional library.
 </p><p>
-  As we depart this resting spot and enter the next stretch of our trip, we welcome more errors, hesitation, questions, and conversations that will guide us towards more exits. The minor as a method, as we are inspired by Hentyle Yapp, “asks us to pause and hesitate instead of answer and challenge.”<sup>42</sup>
+  As we depart this resting spot and enter the next stretch of our trip, we welcome more errors, hesitation, questions, and conversations that will guide us towards more exits. The minor as a method, as we are inspired by Hentyle Yapp, “asks us to pause and hesitate instead of answer and challenge.”<sup>43</sup>
 </p>
 <div class="footnote">
   <hr>
   <p>
-  41 As suggested by a warm, helpful anonymous source.
+  42 As suggested by a warm, helpful anonymous source.
   </p><p>
-  42 Yapp, Minor China, 8.
+  43 Yapp, <i>Minor China</i>, 8.
 </p>
 </div>
 
@@ -500,6 +506,10 @@
     Schwager, & Ulrich, L. T. (2004). <i>Yards and Gates: Gender in Harvard and Radcliffe history</i>. Palgrave Macmillan.
   </p><p>
     Spivak, Gayatri Chakravorty. <i>An Aesthetic Education in the Era of Globalization.</i> Cambridge, Mass: Harvard University Press, 2012.
+  </p><p>
+    “Students reading in Farnsworth Room.” Harvard University Archives Repository UAV
+    605. Harvard University Archives, Harvard University, Cambridge, MA. Accessed August 23rd, 2022.
+    <a target="_blank" href="http://id.lib.harvard.edu/images/olvwork369125/catalog">link</a>
   </p><p>
     Yapp, Hentyle. Minor China: <i>Method, Materialisms, and the Aesthetic.</i> Durham: Duke University Press, 2021.
   </p>

@@ -89,11 +89,11 @@ export default {
       imgSlide: 1,
     }
   },
-  methods: {
-    loadMedia(path) {
-      return require(path)
-    }
-  }
+  // methods: {
+  //   loadMedia(path) {
+  //     return require(path)
+  //   }
+  // }
 }
 </script>
 

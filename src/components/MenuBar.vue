@@ -8,6 +8,34 @@
             :y="xy[1]*19 -40" />
     </router-link>
 
+    <div class="white-space" :style="{width: width+'px', height: width+'px'}">
+      <div class="arrow-container">
+        <stud v-for="i in 5"
+              :key="'arrow-left-top'+i"
+              :y="Object.keys($route.params).length === 0 ? Math.random()*width : width/2 -(i-1)*10"
+              :x="Object.keys($route.params).length === 0 ? Math.random()*(width-80) + 40: width/2 - 15 + i*10"
+        />
+        <stud v-for="i in 5"
+              :key="'arrow-left-bot'+i"
+              :y="Object.keys($route.params).length === 0 ? Math.random()*width : width/2  +(i-1)*10"
+              :x="Object.keys($route.params).length === 0 ?  Math.random()*(width-80) + 40: width/2 - 15 + i*10"
+        />
+        <stud v-for="i in 6"
+              :key="'arrow-left-top'+i+5"
+              :y="Object.keys($route.params).length === 0 ? Math.random()*width : width/2  -(i-1)*10"
+              :x="Object.keys($route.params).length === 0 ? Math.random()*(width-80) + 40: width/2 - 45 + i*10"
+        />
+        <stud v-for="i in 6"
+              :key="'arrow-left-bot'+i+5"
+              :y="Object.keys($route.params).length === 0 ? Math.random()*width : width/2  +(i-1)*10"
+              :x="Object.keys($route.params).length === 0 ?  Math.random()*(width-80) + 40: width/2 - 45 + i*10"
+        />
+        <router-link tag = "div" class="click-zone"
+                     to="/"/>
+
+      </div>
+    </div>
+
     <div id="menu">
 <!--      <star v-for="i in 5" :key="'bullet'+i" :x="16" :y="18*i-5"/>-->
 <!--      <stud v-for="i in 5" :key="'bullet'+i" :x="14" :y="18.3*i-6"/>-->
@@ -20,9 +48,9 @@
       <router-link to="/about" exact>
         <h2>ABOUT</h2>
       </router-link>
-      <router-link to="/future-visions">
-        <h2>FUTURE VISION</h2>
-      </router-link>
+<!--      <router-link to="/future-visions">-->
+<!--        <h2>FUTURE VISION</h2>-->
+<!--      </router-link>-->
       <router-link to="/acknowledgment">
         <h2>ACKNOWLEDGEMENT</h2>
       </router-link>
@@ -115,5 +143,25 @@ export default {
     height: 260px;
     cursor: pointer;
   }
-
+  .white-space{
+    position: relative;
+    display: flex;
+  }
+  .arrow-container{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+  .click-zone{
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*top: 5%;*/
+    margin: 0 auto;
+    padding: 0;
+    height: 125px;
+    width: 90px;
+  }
 </style>

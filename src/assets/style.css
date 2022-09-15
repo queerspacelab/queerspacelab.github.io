@@ -13,6 +13,14 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: HKGroteskReg;
+  font-display: auto;
+  src: local("HKGrotesk"), url("/fonts/HKGrotesk/HKGrotesk-Regular.woff") format("woff"), url("/fonts/HKGrotesk/HKGrotesk-Regular.woff2") format("woff2");
+  font-weight: bold;
+}
+
+
 html {
   margin: 0;
   font-family: HKGrotesk, sans-serif;
@@ -70,6 +78,7 @@ h2 {
 
 p {
   font-size: var(--font-small-med);
+
   font-weight: 400;
   margin: 15px;
   letter-spacing: -0.02rem;

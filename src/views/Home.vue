@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="full-bleed">
-    <menu-bar :width="layout.menuWidth"/>
+    <menu-bar @click="getLayoutDims" :width="layout.menuWidth"/>
     <transition name="slide">
       <about v-if="$route.params.page === 'about'"
               :width="layout.fullPageWidth"/>
@@ -25,6 +25,7 @@
              :width="layout.pageWidth"
              :img="content.img"
              :left="layout.pageLeft[i]"
+             :interval="layout.pageInterval"
       />
     </transition-group>
 <!--      <magnifying-glass-->
@@ -101,7 +102,7 @@ export default {
   mounted() {
     this.isMobileDevice = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
     if (this.isMobileDevice) console.log('mobile device detected');
-    // this.print();
+
     this.importData();
 
     // window.addEventListener("keydown", (e) => {
@@ -111,18 +112,19 @@ export default {
     // });
 
     this.noOfProjects = Object.keys(this.contents).length;
-    console.log(this.noOfProjects, 'projects')
+    // console.log(this.noOfProjects, 'projects')
 
     // get layout dimensions
     this.getLayoutDims();
-    for (let i=0; i < 30; i++){
-      this.randXY.push([Math.random(), Math.random()])
-    }
+
+    // for (let i=0; i < 30; i++){
+    //   this.randXY.push([Math.random(), Math.random()])
+    // }
 
     // magnifying glass
-    this.glassXY = [this.layout.viewWidth * ((this.rightColumnWidth - this.layout.marginRight) / 100 * Math.random() + 1 - this.rightColumnWidth/100),
-      this.layout.viewHeight * Math.random()];
-    this.getMagnifiedIndex()
+    // this.glassXY = [this.layout.viewWidth * ((this.rightColumnWidth - this.layout.marginRight) / 100 * Math.random() + 1 - this.rightColumnWidth/100),
+    //   this.layout.viewHeight * Math.random()];
+    // this.getMagnifiedIndex()
   },
   data() {
     return {
@@ -130,11 +132,11 @@ export default {
       noOfProjects: '',
       contents: '',
       showProject: this.$route.params.project,
-      randXY: [],
-      glassXY: [0,0],
-      magnified: null,
+      // randXY: [],
+      // glassXY: [0,0],
+      // magnified: null,
       layout: {
-        viewHeight: '',
+        viewHeight: 0,
         viewWidth: '',
         marginRight: 80,
         menuWidth: 340,
@@ -157,7 +159,6 @@ export default {
       // deep: true,
       // immediate: true
     },
-
     // layout(){
     //   this.getMagnifiedIndex()
     // },
@@ -166,7 +167,6 @@ export default {
     // },
     // '$route.params.page': {
     //   handler: function(param) {
-    //     // console.log('param', param);
     //     if(param) this.getLayoutDims("page")
     //     else this.getLayoutDims("home")
     //   },
@@ -175,8 +175,6 @@ export default {
     // },
     // '$route.params.project': {
     //   handler: function(param) {
-    //     console.log(this.showProject)
-    //     console.log('param', param);
     //     if(param) this.getLayoutDims(param)
     //     else this.getLayoutDims("home")
     //   },
@@ -196,7 +194,6 @@ export default {
     getLayoutDims() {
       this.routeParam = this.$route.params.page ? "page": this.$route.params.project? this.$route.params.project: "home"
       let param = this.routeParam;
-      console.log(param)
       this.layout.viewHeight = window.innerHeight;
       this.layout.viewWidth = window.innerWidth;
       let leftWidth = this.layout.menuWidth;
@@ -228,39 +225,19 @@ export default {
         this.layout.pageLeft[i] = this.layout.viewWidth - this.layout.marginRight - this.layout.pageWidth - this.layout.pageInterval*i;
       }
     },
-    getMagnifiedIndex(){
-      for(let i = 0; i < this.noOfProjects; i++){
-        if (this.layout.viewWidth * (100 - this.layout.marginRight - 5)/100 - this.layout.viewWidth*(100-this.layout.menuWidth/this.layout.viewWidth*100-this.layout.marginRight)/600 * i < this.glassXY[0]
-            && this.glassXY[0] < this.layout.viewWidth * (100 - this.layout.marginRight - 5)/100 - this.layout.viewWidth*(100-this.layout.menuWidth/this.layout.viewWidth*100-this.layout.marginRight)/600 * (i-1)) {
-          // console.log(i)
-          // console.log(this.layout.viewWidth*(100-this.layout.menuWidth/this.layout.viewWidth*100-this.layout.marginRight)/6  * i)
-          this.magnified = this.contents[i].abstract
-        }
-      }
-    },
-    updateGlassXY(xy) {
-      this.glassXY = xy
-    },
-    print() {
-      // const el = this.$refs.pages;
-      // add option type to get the image version
-      // if not provided the promise will return
-      // the canvas.
-      // const options = {
-      //   type: 'dataURL'
-      // }
-      // this.magnified = this.$html2canvas(el, options);
-      // let el = document.getElementById('page1');
-      // console.log(el)
-      // domtoimage.toPng(el)
-      //     .then(function (dataUrl) {
-      //       this.magnified = dataUrl;
-      //     })
-      //     .catch(function (error) {
-      //       console.error(error);
-      //     });
-
-    }
+    // getMagnifiedIndex(){
+    //   for(let i = 0; i < this.noOfProjects; i++){
+    //     if (this.layout.viewWidth * (100 - this.layout.marginRight - 5)/100 - this.layout.viewWidth*(100-this.layout.menuWidth/this.layout.viewWidth*100-this.layout.marginRight)/600 * i < this.glassXY[0]
+    //         && this.glassXY[0] < this.layout.viewWidth * (100 - this.layout.marginRight - 5)/100 - this.layout.viewWidth*(100-this.layout.menuWidth/this.layout.viewWidth*100-this.layout.marginRight)/600 * (i-1)) {
+    //       // console.log(i)
+    //       // console.log(this.layout.viewWidth*(100-this.layout.menuWidth/this.layout.viewWidth*100-this.layout.marginRight)/6  * i)
+    //       this.magnified = this.contents[i].abstract
+    //     }
+    //   }
+    // },
+    // updateGlassXY(xy) {
+    //   this.glassXY = xy
+    // },
   }
 
 

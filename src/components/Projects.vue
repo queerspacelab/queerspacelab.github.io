@@ -157,11 +157,11 @@ export default {
     //   }
     // }
   },
-  methods: {
-    loadMedia(path) {
-      return require(path)
-    }
-  }
+  // methods: {
+  //   loadMedia(path) {
+  //     return require(path)
+  //   }
+  // }
 }
 </script>
 

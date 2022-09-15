@@ -1,6 +1,20 @@
 <template>
   <div class="project" id="the-closet">
-    <div class="img-container">
+    <div>
+      <div class="arrow-container" v-if="view > 2">
+        <stud v-for="i in 4"
+              :key="'project-arrow-left-top'+i"
+              :y="40+(i-1)*10"
+              :x="i*10"
+        />
+        <stud v-for="i in 4"
+              :key="'project-arrow-left-bot'+i"
+              :y="40-(i-1)*10"
+              :x="i*10"
+        />
+        <div class="click-zone-left" v-if="view > 2"
+             @click="view=2"/>
+      </div>
       <transition name="fade">
         <div v-if="view === 1" class="img-container"
              @click="view = 2">
@@ -20,9 +34,6 @@
                @click="view = i+2" />
         </div>
         <div v-if="view > 2" class="img-container">
-          <div class="click-zone-left"
-               :style="{position: 'absolute', width:'100px', height: '50%'}"
-               @click="view=2"/>
           <img :src="'/images/the_closet_' + view +'.jpeg'"
                :class="view===6 || view===8 || view===9? 'center-portrait': ''"/>
         </div>
@@ -226,8 +237,10 @@
 </template>
 
 <script>
+import Stud from "@/components/Blocks/Stud";
 export default {
   name: "TheCloset",
+  components: {Stud},
   data() {
     return {
       view: 1,
@@ -291,6 +304,8 @@ export default {
 .img-container {
   display: flex;
   flex-direction: column;
+  padding-top: 9%;
+  /*height: fit-content;*/
 }
 
 
@@ -385,9 +400,7 @@ a {
   text-justify: newspaper;
   /*color: #666;*/
 }
-.click-zone-left {
-  cursor: pointer;
-}
+
 .caption {
   text-align: center;
   text-indent: 0;
@@ -399,5 +412,23 @@ a {
   margin-bottom: 18px;
   margin-top: -10px;
 }
+.arrow-container{
+  /*position: relative;*/
+  /*left: 0;*/
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  left: 53%;
+  transform: translate(-50%, 0);
+}
+.click-zone-left{
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  left: 53%;
+  transform: translate(-50%, 0);
+}
+
 
 </style>
