@@ -101,6 +101,14 @@ a {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 500px) {
+  .page-full {
+    left: 0;
+    z-index: 999;
+    top:100%;
+
+  }
+}
 .page-full{
   position: absolute;
   background: white;

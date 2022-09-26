@@ -1,6 +1,8 @@
 <template>
   <div id="app" class="full-bleed">
-    <menu-bar @click="getLayoutDims" :width="layout.menuWidth"/>
+    <menu-bar @click="getLayoutDims"
+              :width="layout.menuWidth"
+    />
     <transition name="slide">
       <about v-if="$route.params.page === 'about'"
               :width="layout.fullPageWidth"/>
@@ -11,23 +13,25 @@
       <team v-if="$route.params.page === 'team'"
             :width="layout.fullPageWidth"/>
     </transition>
-    <transition-group appear
+    <div v-if="!isMobileDevice" class="pages-container">
+      <transition-group appear
                 name="slide">
-      <page v-for="(content,i) in contents"
-             ref="pages"
-             @clickedIndex="clickedIndexFunc($event)"
-             :id="'page'+i"
-             :key="'page'+i"
-             :index="i"
-             :title_short="content.title_short"
-             :author="content.author"
-             :abstract="content.abstract"
-             :width="layout.pageWidth"
-             :img="content.img"
-             :left="layout.pageLeft[i]"
-             :interval="layout.pageInterval"
-      />
-    </transition-group>
+        <page v-for="(content,i) in contents"
+               ref="pages"
+               @clickedIndex="clickedIndexFunc($event)"
+               :id="'page'+i"
+               :key="'page'+i"
+               :index="i"
+               :title_short="content.title_short"
+               :author="content.author"
+               :abstract="content.abstract"
+               :width="layout.pageWidth"
+               :img="content.img"
+               :left="layout.pageLeft[i]"
+               :interval="layout.pageInterval"
+        />
+      </transition-group>
+    </div>
 <!--      <magnifying-glass-->
 <!--          v-show="!$route.params.page"-->
 <!--          @mouseXY="updateGlassXY($event)"-->
@@ -128,7 +132,7 @@ export default {
   },
   data() {
     return {
-      isMobileDevice: false,
+      isMobileDevice: true,
       noOfProjects: '',
       contents: '',
       showProject: this.$route.params.project,

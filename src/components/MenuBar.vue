@@ -1,14 +1,20 @@
 <template>
   <div id="menubar" class="page" :style="{width: width+'px'}">
-    <router-link tag="div" to="/" id="logo">
+<!--    <router-link tag="div" to="/" id="logo-container"-->
+<!--    :style="{left: isMobileDevice ? '50%': 0}">-->
+      <router-link tag="div" to="/" id="logo-container">
       <stud v-for="(xy, i) in logoCoor"
             class="stud-logo"
             :key="'stud'+i"
             :x="xy[0]*19 -35"
             :y="xy[1]*19 -40" />
     </router-link>
-
-    <div class="white-space" :style="{width: width+'px', height: width+'px'}">
+    <div v-if="isMobileDevice" class="mobile">
+      <p>Please visit the website on your desktop to view projects.</p>
+    </div>
+    <div class="white-space"
+         v-else
+         :style="{width: width+'px', height: width+'px'}">
       <div class="arrow-container">
         <stud v-for="i in 5"
               :key="'arrow-left-top'+i"
@@ -52,7 +58,7 @@
 <!--        <h2>FUTURE VISION</h2>-->
 <!--      </router-link>-->
       <router-link to="/acknowledgment">
-        <h2>ACKNOWLEDGEMENT</h2>
+        <h2>ACKNOWLEDGEMENTS</h2>
       </router-link>
     </div>
   </div>
@@ -94,6 +100,7 @@ export default {
     }
   },
   props: {
+    // isMobileDevice: Boolean,
     width: Number,
   },
   components: {
@@ -137,7 +144,7 @@ export default {
     text-decoration: none;
     /*text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);*/
   }
-  #logo {
+  #logo-container {
     margin: 30px;
     width: calc(100% - 30px);
     height: 260px;
@@ -164,4 +171,19 @@ export default {
     height: 125px;
     width: 90px;
   }
+  .mobile {
+    position: absolute;
+    top: 45vh;
+    box-shadow: var(--shadow);
+    /*transform: translate(0, 50%);*/
+    border: var(--border-dashed);
+    margin: 15px;
+
+  }
+  .mobile > p {
+    font-family: HKGroteskReg, sans-serif;
+    font-size: var(--font-big);
+    text-align: center;
+  }
+
 </style>

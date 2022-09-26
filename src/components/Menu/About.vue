@@ -41,6 +41,14 @@
       </li>
     </ol>
   </div>
+  <p class="center">
+    <br><br>
+    <span>Research and Media Contact</span><br>
+    Aidan Flynn<br>
+    <i>Co-Principal Investigator</i>, Queer Space Lab @ MIT<br>
+    <span><a href="mailto:aflynn@mit.edu">aflynn@mit.edu</a></span>
+  </p>
+  <div class="body"></div>
 </div>
 </template>
 
@@ -54,6 +62,18 @@ export default {
 </script>
 
 <style scoped>
+.center {
+  text-align: center;
+  font-size: var(--font-small-med);
+  font-family: HKGroteskReg, sans-serif;
+  line-height: 2rem;
+}
+.center > span {
+  font-family: HKGrotesk, sans-serif;
+}
+.center > span > a{
+  color: #666;
+}
 li {
   /*font-family: Georgia;*/
   text-align: center;

@@ -17,10 +17,16 @@
       <div v-for="(content,i) in contents" :key="'member'+i" class="member">
         <h2 @click="toggleBio(content.author)"> {{ content.author }} </h2>
         <div class="pronouns"> {{ content.pronouns }} </div>
+        <div class="title"> {{ content.title }}</div>
         <transition name="swipe-down">
           <div v-if="content.author===showBio" class="bio">
             <p>{{ content.bio }}</p><br>
-            <a target="_blank" :href="content.url">{{ content.urlType }}</a>
+            <a target="_blank"
+               v-for="(url, j) in content.url"
+               :key="'url'+i+j"
+               :href="url">
+              {{ content.urlType[j] }}<br>
+            </a>
 
           </div>
         </transition>
@@ -73,6 +79,12 @@ h1 {
   color: #ffffff;
   text-shadow: 0 0 3px #222;
 }
+.title {
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
+  color: #666;
+}
+
 .member {
   padding: 0 15px;
 }

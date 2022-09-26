@@ -13,8 +13,8 @@
   <div class="page-wrapper"
        @mouseenter = "isMouseOver = true"
        @mouseleave = "isMouseOver = false"
-       :style="{ left: isMouseOver ? (left+30) + 'px' : left + 'px',
-                 zIndex: isMouseOver ? 999 :index,
+       :style="{ left: isMouseOver ? (left+20) + 'px' : left + 'px',
+                 zIndex: Object.keys($route.params).length !== 0 ? index: isMouseOver ? 999 :index,
                  transform: isMouseOver ? 'translateX(8px)': 'translateX(0)'}"
   >
 <!--    @click="emitClickedIndex(index)"-->
@@ -117,7 +117,6 @@ export default {
   },
   mounted() {
     // this.title_stringified = this.title_short.toLowerCase().split(' ').join('_');
-    // console.log(this.title_stringified);
     // this.left_this = this.left
     // this.width_this = this.width
     this.nameTagPos = (45 + (-1)**this.index*(1+Math.random())*15)
@@ -147,7 +146,7 @@ export default {
   :deep() p {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
-    font-size: var(--font-small);
+    font-size: calc(0.6rem + 0.6vh);
     letter-spacing: -1px;
     margin: 10px 30px;
     text-shadow: 0 0 15px black;
