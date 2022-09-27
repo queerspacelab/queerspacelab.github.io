@@ -19,16 +19,16 @@
     "title": "Researcher",
     "pronouns": "she/her",
     "bio": "Doris is an architectural and urban designer originally from Guangzhou, China. She received a B.Arch degree from the University of Southern California and worked as a designer specializing in sports and entertainment venue design before joining MIT. Doris is currently pursuing her master's degree in Urbanism (SMArchS). Her research interests fall in spatial, social, and political discussion on the urban scape, especially on civic participation, gender, and sexuality. She is keen on utilizing design thinking to guide the research, integrating writing, drawing, and curating methods into the process.",
-    "url": "mailto:duanmu@mit.edu",
-    "urlType": "mail"
+    "url": ["mailto:duanmu@mit.edu"],
+    "urlType": ["mail"]
   },
   {
     "author": "Felix Li",
     "title": "Researcher",
     "pronouns": "he/him",
     "bio": "Felix Li is currently studying Art and Design, and Comparative Media Studies at MIT.",
-    "url": "mailto:felixli@mit.edu",
-    "urlType": "mail"
+    "url": ["mailto:felixli@mit.edu"],
+    "urlType": ["mail"]
   },
   {
     "author": "Merve Akdogan",
@@ -64,8 +64,8 @@
     "title": "Researcher",
     "pronouns": "she/her",
     "bio": "Nina (Yihong) Li is a class of 2024 undergrad student double majoring in architecture and literature. She grew up in Qingdao, China and moved to New Jersey when she was 12 years old. She is intrigued by visual art, history, aesthetics, existential philosophy, or any mixture of those. She has a background in 2D art-making and has a wide range of interest from exploring interactive spatial designs to appreciating fat, furry cats.",
-    "url": "https://www.linkedin.com/in/nina-yihong-li-b3101b228/",
-    "urlType": "LinkedIn"
+    "url": ["https://www.linkedin.com/in/nina-yihong-li-b3101b228/"],
+    "urlType": ["LinkedIn"]
   }
 ]
 

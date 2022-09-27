@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="full-bleed">
     <menu-bar @click="getLayoutDims"
-              :width="layout.menuWidth"
-    />
+              :width="isMobileDevice ? layout.viewWidth :layout.menuWidth"
+              :isMobileDevice="isMobileDevice"/>
     <transition name="slide">
       <about v-if="$route.params.page === 'about'"
               :width="layout.fullPageWidth"/>
@@ -104,7 +104,7 @@ export default {
     window.addEventListener('resize', this.getLayoutDims);
   },
   mounted() {
-    this.isMobileDevice = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+    // this.isMobileDevice = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
     if (this.isMobileDevice) console.log('mobile device detected');
 
     this.importData();
@@ -132,7 +132,7 @@ export default {
   },
   data() {
     return {
-      isMobileDevice: true,
+      isMobileDevice: false,
       noOfProjects: '',
       contents: '',
       showProject: this.$route.params.project,

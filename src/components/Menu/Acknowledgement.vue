@@ -11,7 +11,7 @@
 <!--      ‖-->
 <!--    </text>-->
 <!--  </svg>-->
-  <h1>ACKNOWLEDGMENT</h1>
+  <h1>ACKNOWLEDGMENTS</h1>
   <p class="head">
     This experiment of creating a queer archive would have been impossible to do alone. It is a collaboration with many brilliant individuals, whose questions, energy and expertise were instrumental in shaping the project. This work was made possible by the support from the MindHandHeart Innovation Fund Grant from MIT’s Office of the Chancellor. Wonki (Kii) Kang took on the role as web developer even when the project always felt like a moving target; this website would not exist without his dedication. Alice Song and Angie Door were instrumental in developing the design of the logo and walking us all through the development process. And last but not least, we want to thank the many researchers in the Lab for their eagerness to engage in conversations about queerness, their lived experiences, and for taking the time to research, to learn, and to push boundaries in their archival processes. To all, we are grateful that you came to this space, and honored to learn from and with each one of you.
 <br><br>
