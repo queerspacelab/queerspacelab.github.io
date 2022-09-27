@@ -6,7 +6,7 @@
     <transition name="slide">
       <about v-if="$route.params.page === 'about'"
               :width="layout.fullPageWidth"/>
-      <acknowledgement v-if="$route.params.page === 'acknowledgment'"
+      <acknowledgement v-if="$route.params.page === 'acknowledgments'"
                        :width="layout.fullPageWidth"/>
       <future v-if="$route.params.page === 'future-visions'"
               :width="layout.fullPageWidth"/>

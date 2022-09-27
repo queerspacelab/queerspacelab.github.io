@@ -57,7 +57,7 @@
 <!--      <router-link to="/future-visions">-->
 <!--        <h2>FUTURE VISION</h2>-->
 <!--      </router-link>-->
-      <router-link to="/acknowledgment">
+      <router-link to="/acknowledgments">
         <h2>ACKNOWLEDGEMENTS</h2>
       </router-link>
     </div>
