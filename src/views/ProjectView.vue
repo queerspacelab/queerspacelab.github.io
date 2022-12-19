@@ -1,11 +1,11 @@
 <template>
   <div id="app" class="full-bleed">
-    <menu-bar @click="getLayoutDims"
-              :width="isMobileDevice ? layout.viewWidth :layout.menuWidth"
-              :isMobileDevice="isMobileDevice"/>
+<!--    <menu-bar @click="getLayoutDims"-->
+<!--              :width="isMobileDevice ? layout.viewWidth :layout.menuWidth"-->
+<!--              :isMobileDevice="isMobileDevice"/>-->
 <!--    <transition name="slide">-->
 <!--      <about v-if="$route.params.page === 'about'"-->
-<!--              :width="layout.fullPageWidth"/>-->
+<!--             :width="layout.fullPageWidth"/>-->
 <!--      <acknowledgement v-if="$route.params.page === 'acknowledgments'"-->
 <!--                       :width="layout.fullPageWidth"/>-->
 <!--      <future v-if="$route.params.page === 'future-visions'"-->
@@ -13,43 +13,64 @@
 <!--      <team v-if="$route.params.page === 'team'"-->
 <!--            :width="layout.fullPageWidth"/>-->
 <!--    </transition>-->
-<!--    <div v-if="!isMobileDevice" class="pages-container">-->
-<!--      <transition-group appear-->
-<!--                name="slide">-->
-<!--        <page v-for="(content,i) in contents"-->
-<!--               ref="pages"-->
-<!--               @clickedIndex="clickedIndexFunc($event)"-->
-<!--               :id="'page'+i"-->
-<!--               :key="'page'+i"-->
-<!--               :index="i"-->
-<!--               :title_short="content.title_short"-->
-<!--               :author="content.author"-->
-<!--               :abstract="content.abstract"-->
-<!--               :width="layout.pageWidth"-->
-<!--               :img="content.img"-->
-<!--               :left="layout.pageLeft[i]"-->
-<!--               :interval="layout.pageInterval"-->
-<!--        />-->
-<!--      </transition-group>-->
-<!--    </div>-->
+    <div v-if="!isMobileDevice" class="pages-container">
+      <transition-group appear
+                        name="slide">
+        <page v-for="(content,i) in contents"
+              ref="pages"
+              @clickedIndex="clickedIndexFunc($event)"
+              :id="'page'+i"
+              :key="'page'+i"
+              :index="i"
+              :title_short="content.title_short"
+              :author="content.author"
+              :abstract="content.abstract"
+              :width="layout.pageWidth"
+              :img="content.img"
+              :left="layout.pageLeft[i]"
+              :interval="layout.pageInterval"
+        />
+      </transition-group>
+    </div>
+    <!--      <magnifying-glass-->
+    <!--          v-show="!$route.params.page"-->
+    <!--          @mouseXY="updateGlassXY($event)"-->
+    <!--          :abstract = "magnified"-->
+    <!--          :x_init = "glassXY[0]"-->
+    <!--          :y_init = "glassXY[1]"-->
+    <!--      />-->
+    <!--    </div>-->
+
+    <!--    <div id="star-wrapper">-->
+    <!--      <stud v-for="(xy,i) in randXY"-->
+    <!--            :key="'star'+i"-->
+    <!--            :x="xy[0]*layout.viewWidth"-->
+    <!--            :y="xy[1]*layout.viewHeight"-->
+    <!--            />-->
+    <!--    </div>-->
+    <!--    <transition name="zoom">-->
+    <!--      <column v-if="clickedIndex"-->
+    <!--              :index="clickedIndex" />-->
+    <!--    </transition>-->
+    <!--    <img :src="magnified">-->
     <transition name="fade">
-    <projects v-if= "$route.params.project"
-              :index = parseInt($route.params.project)
-              :left = layout.pageLeft[parseInt($route.params.project)+1]+layout.pageWidth
-              :width = layout.fullPageWidth+layout.pageInterval
-              :author = contents[$route.params.project].author
-              :title = contents[$route.params.project].title
-              :link = contents[$route.params.project].link
-    />
+      <projects v-if= "$route.params.project"
+                :index = parseInt($route.params.project)
+                :left = layout.pageLeft[parseInt($route.params.project)+1]+layout.pageWidth
+                :width = layout.fullPageWidth+layout.pageInterval
+                :author = contents[$route.params.project].author
+                :title = contents[$route.params.project].title
+                :link = contents[$route.params.project].link
+      />
     </transition>
     <Footer />
   </div>
 </template>
 
 <script>
-// import Page from "@/components/Page";
+import Page from "@/components/Page";
 import Footer from "@/components/Footer";
-import MenuBar from "@/components/MenuBar";
+// import MenuBar from "@/components/MenuBar";
 // import About from "@/components/Menu/About";
 // import Acknowledgement from "@/components/Menu/Acknowledgement";
 // import Future from "@/components/Menu/Future";
@@ -59,15 +80,15 @@ import Projects from "@/components/Projects";
 // import json from "../../public/json/content.json"
 
 export default {
-  name: "Home",
+  name: "ProjectView",
   components: {
     Projects,
     // Team,
     // Future,
     // Acknowledgement,
     // About,
-    MenuBar,
-    // Page,
+    // MenuBar,
+    Page,
     Footer,
   },
   created() {

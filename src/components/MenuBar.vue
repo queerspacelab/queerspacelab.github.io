@@ -48,7 +48,7 @@
       <router-link to="/">
         <h2>HOME</h2>
       </router-link>
-      <router-link to="/team">
+      <router-link to="/team" exact>
         <h2>TEAM</h2>
       </router-link>
       <router-link to="/about" exact>
@@ -57,7 +57,7 @@
 <!--      <router-link to="/future-visions">-->
 <!--        <h2>FUTURE VISION</h2>-->
 <!--      </router-link>-->
-      <router-link to="/acknowledgments">
+      <router-link to="/acknowledgments" exact>
         <h2>ACKNOWLEDGEMENTS</h2>
       </router-link>
     </div>
@@ -100,7 +100,7 @@ export default {
     }
   },
   props: {
-    // isMobileDevice: Boolean,
+    isMobileDevice: Boolean,
     width: Number,
   },
   components: {

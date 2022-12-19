@@ -1,6 +1,8 @@
 <template>
   <div id="app" class="full-bleed">
     <router-view />
+    <router-view name="pages"/>
+    <router-view name="projects"/>
   </div>
 </template>
 

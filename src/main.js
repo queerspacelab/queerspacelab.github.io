@@ -1,20 +1,41 @@
 import Vue from 'vue'
-import VueRouter from "vue-router";
+import Router from "vue-router";
 import VueCookie from "vue-cookie";
-// import VueLazyLoad from "vue-lazyload";
 
 import App from './App.vue'
 
 Vue.config.productionTip = false
-Vue.use(VueRouter);
+Vue.use(Router);
 Vue.use(VueCookie);
-// Vue.use(VueLazyLoad);
 
-export const router = new VueRouter({
+// function loadView(view) {
+//   return () => import(/* webpackChunkName: "view-[request]" */ `@/views/${view}.vue`)
+// }
+
+export const router = new Router({
+  // mode: "history",
   routes: [
-    { path: "/", component: () => import("./views/Home.vue"), props: true, name: 'home'},
-    { path: "/:page", component: () => import("./views/Home.vue"), props: true, name: 'page'},
-    { path: "/project/:project", component: () => import("./views/Home.vue"), props: true, name: 'project'}
+    {
+      path: "/", props: {default: true, header: true}, name: 'home',
+      components: {
+        default: () => import("@/views/Home.vue"),
+        pages: () => import("@/views/Pages.vue"),
+      }
+    },
+    {
+      path: "/:page", props: true, name: 'page',
+      components: {
+        default: () => import("@/views/Home.vue"),
+        pages: () => import("@/views/Pages.vue"),
+      }
+    },
+    {
+      path: "/project/:project", props: true, name: 'project',
+      components: {
+        default: () => import("@/views/Home.vue"),
+        projects: () => import("@/views/ProjectView.vue"),
+      }
+    }
   ],
   strict: true,
 });
