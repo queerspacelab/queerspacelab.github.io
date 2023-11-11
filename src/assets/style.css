@@ -101,14 +101,23 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 460px) {
   .page-full {
     left: 0;
     z-index: 999;
     top:100%;
-
+  }
+  :root {
+    --font-biggest: 3.2rem;
+    --font-big: 1.8rem;
+    --font-med: 1.5rem;
+    --font-small-med: 1.3rem;
+    --font-small: 0.7rem;
+    --border: 1px solid #757575;
+    --border-dashed: 1px dashed #757575;
   }
 }
+
 .page-full{
   position: absolute;
   background: white;

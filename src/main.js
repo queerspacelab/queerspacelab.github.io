@@ -11,16 +11,26 @@ Vue.use(VueCookie);
 // function loadView(view) {
 //   return () => import(/* webpackChunkName: "view-[request]" */ `@/views/${view}.vue`)
 // }
+function getIsMobileDevice() {
+  return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+}
 
 export const router = new Router({
   // mode: "history",
+  data: () => {
+    return {
+      isMobileDevice: getIsMobileDevice(),
+    }
+  },
   routes: [
     {
       path: "/", props: {default: true, header: true}, name: 'home',
       components: {
         default: () => import("@/views/Home.vue"),
-        pages: () => import("@/views/Pages.vue"),
-      }
+        pages: () => {
+            if (!this.isMobileDevice) import("@/views/Pages.vue")
+          },
+        }
     },
     {
       path: "/:page", props: true, name: 'page',

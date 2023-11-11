@@ -10,7 +10,7 @@
   </div>
   <div class="footer-text" id="footer-right">
     <p>
-      Designed and Developed by <u><a href="https://k--kang.com">Kii Kang</a><br></u>
+      Designed and Developed by <u><a href="https://k--kang.com" target="_blank">Kii Kang</a><br></u>
       Designed by <u>Angie Door</u> & <u>Alice Song</u>
     </p>
   </div>
