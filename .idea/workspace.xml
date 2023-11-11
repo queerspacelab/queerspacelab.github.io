@@ -5,137 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1f3428c-7a1e-4944-b75e-2261a659467b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/085b54520cac5d8a3aef822477b2b61c.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/085b54520cac5d8a3aef822477b2b61c.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2cfe9628f9b76c7ebe8efe5b33c10552.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2cfe9628f9b76c7ebe8efe5b33c10552.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3b2ee036a12d2b8fe24153420507dc27.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3b2ee036a12d2b8fe24153420507dc27.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/47fc929791de5969078652a6cab40656.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/47fc929791de5969078652a6cab40656.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5464b037da1275f86fd3ce45068df931.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5464b037da1275f86fd3ce45068df931.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7f0acb9f5dc2db776e52b35a5656ff28.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7f0acb9f5dc2db776e52b35a5656ff28.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a2357ed51b947a5feaa22d2be41fc20d.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a2357ed51b947a5feaa22d2be41fc20d.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ac55c32ccf2e889eee1525e66e19e76d.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ac55c32ccf2e889eee1525e66e19e76d.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b54dafb6bbf123afee578b2a769e6b85.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b54dafb6bbf123afee578b2a769e6b85.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d51862a9e1fb8799c776b836da7c9f83.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d51862a9e1fb8799c776b836da7c9f83.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/dfba4ec8480fc2ab0405b554d18aab17.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/dfba4ec8480fc2ab0405b554d18aab17.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/dfedfe3afe3111cf6b4044b2e87c3fc8.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/dfedfe3afe3111cf6b4044b2e87c3fc8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e69a93ace0b8600d628ca8ae107ace42.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e69a93ace0b8600d628ca8ae107ace42.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ee3e3ba836926dfa843d47d478f1eaee.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ee3e3ba836926dfa843d47d478f1eaee.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0903ea4c56977a9c23915cecec9027f7.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0903ea4c56977a9c23915cecec9027f7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/15f2fc8d083facb74275176bbe5ba24a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/15f2fc8d083facb74275176bbe5ba24a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/1618f180a7be26392d0076ae759055b9.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/1618f180a7be26392d0076ae759055b9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/1b343b17eaecf0e92cb6a4e2d2f7d9d2.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/1b343b17eaecf0e92cb6a4e2d2f7d9d2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/204da71e18998c522f2c6893094e0c1c.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/204da71e18998c522f2c6893094e0c1c.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/3987ea7b17f5c9a9b7ce3bf51ea372e8.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/3987ea7b17f5c9a9b7ce3bf51ea372e8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/3f8d0a586f57d4f818f4776dab3d8cfb.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/3f8d0a586f57d4f818f4776dab3d8cfb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/410b8a75c9126867ac0af63e2408d926.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/410b8a75c9126867ac0af63e2408d926.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4d8a26e6d73b825adec8f6d5b967c986.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4d8a26e6d73b825adec8f6d5b967c986.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4f086ac7d6fafeb7ca39515e6c148499.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4f086ac7d6fafeb7ca39515e6c148499.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4fdfc93a8ee3fca28001d66e89a012de.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4fdfc93a8ee3fca28001d66e89a012de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/53a30b1db1dc611de4e94ab35f72b2c1.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/53a30b1db1dc611de4e94ab35f72b2c1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/54e542420c186d6fbb92a4bc7d0380b6.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/54e542420c186d6fbb92a4bc7d0380b6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/5cf29aea58cb64e3b2eff7f843f59384.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/5cf29aea58cb64e3b2eff7f843f59384.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/5fc106df978d6dac4d770f003cfe7450.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/5fc106df978d6dac4d770f003cfe7450.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/680ee89f321c76d0b82a556810e69582.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/680ee89f321c76d0b82a556810e69582.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/7733453b920c15f89df640df6f822ace.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/7733453b920c15f89df640df6f822ace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/828c0108bae12c01e4b964c8d02ac94b.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/828c0108bae12c01e4b964c8d02ac94b.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/9cb0ac52c529779c6becae3bad15842f.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/9cb0ac52c529779c6becae3bad15842f.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/a7a4648b9f4675f1ec731a58a083d4ed.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/a7a4648b9f4675f1ec731a58a083d4ed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ac5ada8b953e13da35a78d2d8267b306.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ac5ada8b953e13da35a78d2d8267b306.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/c0289101de4fef5e989daa4740162dbd.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/c0289101de4fef5e989daa4740162dbd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/d0896a1d384b3753653cf5dd6ada745a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/d0896a1d384b3753653cf5dd6ada745a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/d6c1fdad38ed31db5c7f7215af0ec019.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/d6c1fdad38ed31db5c7f7215af0ec019.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/e7dab5e64088b4790d3b14f589a4670b.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/e7dab5e64088b4790d3b14f589a4670b.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/e9636c7b67814e945368491185db942b.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/e9636c7b67814e945368491185db942b.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ea92d0189c05ca420466e80023b2dd0a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ea92d0189c05ca420466e80023b2dd0a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/eb73fb75f2267776e0e884bd71ccb991.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/eb73fb75f2267776e0e884bd71ccb991.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/f00d33fce2c87857099b851aa16e8f3c.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/f00d33fce2c87857099b851aa16e8f3c.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/CSSPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/CSSPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/CSSRulePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/CSSRulePlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/CustomEase.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/CustomEase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/Draggable.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/Draggable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/EasePack.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/EasePack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/EaselPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/EaselPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/Flip.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/Flip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/MotionPathPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/MotionPathPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/Observer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/Observer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/PixiPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/PixiPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/ScrollToPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/ScrollToPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/ScrollTrigger.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/ScrollTrigger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/TextPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/TextPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/CSSRulePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/CSSRulePlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/CSSRulePlugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/CSSRulePlugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/CSSRulePlugin.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/CSSRulePlugin.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/CustomEase.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/CustomEase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/CustomEase.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/CustomEase.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/CustomEase.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/CustomEase.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/Draggable.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/Draggable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/Draggable.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/Draggable.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/Draggable.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/Draggable.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/EasePack.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/EasePack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/EasePack.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/EasePack.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/EasePack.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/EasePack.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/EaselPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/EaselPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/EaselPlugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/EaselPlugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/EaselPlugin.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/EaselPlugin.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/Flip.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/Flip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/Flip.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/Flip.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/Flip.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/Flip.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/MotionPathPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/MotionPathPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/MotionPathPlugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/MotionPathPlugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/MotionPathPlugin.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/MotionPathPlugin.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/Observer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/Observer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/Observer.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/Observer.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/Observer.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/Observer.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/PixiPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/PixiPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/PixiPlugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/PixiPlugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/PixiPlugin.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/PixiPlugin.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/ScrollToPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/ScrollToPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/ScrollToPlugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/ScrollToPlugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/ScrollToPlugin.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/ScrollToPlugin.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/ScrollTrigger.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/ScrollTrigger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/ScrollTrigger.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/ScrollTrigger.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/ScrollTrigger.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/ScrollTrigger.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/TextPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/TextPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/TextPlugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/TextPlugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/TextPlugin.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/TextPlugin.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/gsap.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/gsap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/gsap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/gsap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/dist/gsap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/dist/gsap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/gsap-core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/gsap-core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/CSSPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/CSSPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/CSSRulePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/CSSRulePlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/CustomEase.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/CustomEase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/Draggable.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/Draggable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/EasePack.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/EasePack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/EaselPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/EaselPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/Flip.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/Flip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/MotionPathPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/MotionPathPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/Observer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/Observer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/PixiPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/PixiPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/ScrollToPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/ScrollToPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/ScrollTrigger.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/ScrollTrigger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/TextPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/TextPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/gsap-core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/gsap-core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/utils/matrix.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/utils/matrix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/utils/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/utils/paths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/src/utils/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/src/utils/strings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/types/animation.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/types/animation.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/types/draggable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/types/draggable.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/types/gsap-core.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/types/gsap-core.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/types/observer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/types/observer.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/types/scroll-smoother.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/types/scroll-smoother.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/types/scroll-trigger.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/types/scroll-trigger.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/types/tween.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/types/tween.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/utils/matrix.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/utils/matrix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/utils/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/utils/paths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/gsap/utils/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gsap/utils/strings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/MinorPresence.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/MinorPresence.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/TheCloset.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/TheCloset.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +25,21 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/public/json/team.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/App.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/assets/style.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Footer.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Menu/Acknowledgement.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Menu/Team.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/MenuBar.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Page.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Projects.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Projects/TheCloset.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/views/Home.vue" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

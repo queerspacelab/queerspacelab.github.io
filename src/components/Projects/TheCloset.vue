@@ -62,7 +62,7 @@
         <hr>
         <p>
         知乎.“让彩虹旗在校园飘扬：一个高校同志小组十二年纪实.” last modified May 14, 2018.
-        <a target="_blank" href="https://zhuanlan.zhihu.com/p/36852164">link</a>
+        <a target="_blank" rel=”noreferrer” href="https://zhuanlan.zhihu.com/p/36852164">link</a>
         </p>
       </div>
     </div>
@@ -115,7 +115,7 @@
       <div class="footnote">
         <hr>
         <p>知乎.“让彩虹旗在校园飘扬：一个高校同志小组十二年纪实.” last modified May 14, 2018.
-          <a target="_blank" href="https://zhuanlan.zhihu.com/p/36852164">link</a>
+          <a target="_blank" rel=”noreferrer” href="https://zhuanlan.zhihu.com/p/36852164">link</a>
         </p>
       </div>
     </div>
@@ -147,7 +147,7 @@
       <div class="footnote"><hr>
         <p>
       早报. “清华大学学生传因在校内放置彩虹旗被处分.” Last modified July 19, 2022.
-          <a href="https://www.zaobao.com.sg/realtime/china/story20220719-1294297" target="_blank">link</a>
+          <a href="https://www.zaobao.com.sg/realtime/china/story20220719-1294297" target="_blank" rel=”noreferrer”>link</a>
         </p>
       </div>
     </div>
@@ -178,10 +178,10 @@
       <div class="footnote"><hr>
         <p>
         知乎. “上海骄傲节的关停和社群本土化的思考.” Last modified August 17, 2020.
-          <a href="https://zhuanlan.zhihu.com/p/188308443?utm_source=weibo_article_bottom" target="_blank">link</a>
+          <a href="https://zhuanlan.zhihu.com/p/188308443?utm_source=weibo_article_bottom" target="_blank" rel=”noreferrer”>link</a>
         </p><p>
         CNN. “'End of the Rainbow': Shanghai Pride shuts down amid shrinking space for China's LGBTQ community.” Last modified August 16, 2020.
-        <a href="https://www.cnn.com/2020/08/14/asia/shanghai-pride-shutdown-intl-hnk/index.html" target="_blank">link</a>
+        <a href="https://www.cnn.com/2020/08/14/asia/shanghai-pride-shutdown-intl-hnk/index.html" target="_blank" rel=”noreferrer”>link</a>
         </p>
       </div>
     </div>
@@ -205,7 +205,7 @@
       <div class="footnote"><hr>
         <p>
           知乎.“让彩虹旗在校园飘扬：一个高校同志小组十二年纪实.” last modified May 14, 2018.
-          <a href="https://zhuanlan.zhihu.com/p/36852164" target="_blank">link</a>
+          <a href="https://zhuanlan.zhihu.com/p/36852164" target="_blank" rel=”noreferrer”>link</a>
         </p>
       </div>
       <img class="center-portrait" src="/images/the_closet_12.jpeg">
@@ -218,7 +218,7 @@
       <div class="footnote"><hr>
         <p>
           百度. “女足李影出柜！前脚官宣与女友相爱一年，下秒删动态被认可太难.” Last modified June 26, 2021.
-          <a href="https://baijiahao.baidu.com/s?id=1703617325488877457&wfr=spider&for=pc" target="_blank">link</a>
+          <a href="https://baijiahao.baidu.com/s?id=1703617325488877457&wfr=spider&for=pc" target="_blank" rel=”noreferrer”>link</a>
         </p>
       </div>
       <img class="center-portrait" src="/images/the_closet_13.jpeg">

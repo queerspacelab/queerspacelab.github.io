@@ -21,7 +21,7 @@
     <hr><p>
     1 Quoting from the Editor’s introduction for Radical History Review Vol 2014 Issue 120: “Queerness and the archival are structured by their own distinct habitual wranglings with absence and presence.”
   </p><p>
-    2 Harvard Property Information Center: <a target="_blank" href="https://harvardplanning.emuseum.com/sites/587/lamont-library">link</a>
+    2 Harvard Property Information Center: <a target="_blank" rel=”noreferrer” href="https://harvardplanning.emuseum.com/sites/587/lamont-library">link</a>
   </p><p>
     3 We are still defining this term for ourselves. At the moment it means the things that are chosen as a representation of how things are.
   </p>
@@ -178,31 +178,31 @@
   <div class="footnote">
     <hr>
     <p>
-      9 <a target="_blank" href="https://harvardplanning.emuseum.com/sites/587/lamont-library">link</a>
+      9 <a target="_blank" rel=”noreferrer” href="https://harvardplanning.emuseum.com/sites/587/lamont-library">link</a>
     </p><p>
       10 Schwager, & Ulrich, Yards and Gates: Gender in Harvard and Radcliffe history.
     </p><p>
-      11 <a target="_blank" href="https://library.harvard.edu/libraries/lamont">link</a>
+      11 <a target="_blank" rel=”noreferrer” href="https://library.harvard.edu/libraries/lamont">link</a>
     </p><p>
       12     Image is used here in the way we have defined it as the way an institution presents itself that does not fully represent its presence.
     </p><p>
       13     The boundary between the geographical notion of space & place, and their architectural sisters remain ambiguous - the two sets of terms (sharing the same words) are often applied interchangeably between the discipline of geography and architecture.
     </p><p>
       14 Lisa Freeman, “Public Libraries are Becoming the New Social Safety Net” (2017),
-    <a target="_blank" href="https://www.policynote.ca/public-libraries-are-becoming-the-new-social-safety-net/">link</a>
+    <a target="_blank" rel=”noreferrer” href="https://www.policynote.ca/public-libraries-are-becoming-the-new-social-safety-net/">link</a>
     </p><p>
       15 The double bind, coined by Gayatri Spivak in her book An Aesthetic Education in the Era of Globalization, describes the situation where one is trapped in a predicament of making a decision between two options, neither of which seems preferable.
     </p><p>
       16 Lisa Freeman, “Public Libraries are Becoming the New Social Safety Net” (2017)
     </p><p>
       17 The public library provides an array of different uses: ranging from sanitary infrastructures to meeting rooms for booking. Curiously, the ALA (American Library Association) lists the “literacy of Homeless” as the library’’s top social function.
-    <a target="_blank" href="https://www.ala.org/tools/research/librariesmatter/category/social-role-library">link</a>
+    <a target="_blank" rel=”noreferrer” href="https://www.ala.org/tools/research/librariesmatter/category/social-role-library">link</a>
     </p><p>
-      18 <a target="_blank" href="https://www.thecrimson.com/article/2022/2/17/mtv-crib-lamont/">link</a>
+      18 <a target="_blank" rel=”noreferrer” href="https://www.thecrimson.com/article/2022/2/17/mtv-crib-lamont/">link</a>
     </p><p>
-      19 <a target="_blank" href="http://libraryhistory.pbworks.com/w/page/16964653/Lamont%20Library">link</a>
+      19 <a target="_blank" rel=”noreferrer” href="http://libraryhistory.pbworks.com/w/page/16964653/Lamont%20Library">link</a>
     </p><p>
-      20 Students reading in Farnsworth Room, 1954, UAV605 (HC 326), Harvard University Archives, Harvard University, Cambridge, MA.<a target="_blank" href="http://id.lib.harvard.edu/images/olvwork369125/catalog">link</a>
+      20 Students reading in Farnsworth Room, 1954, UAV605 (HC 326), Harvard University Archives, Harvard University, Cambridge, MA.<a target="_blank" rel=”noreferrer” href="http://id.lib.harvard.edu/images/olvwork369125/catalog">link</a>
     </p><p>
       21 Geoffery T. Freeman, AIA, “The Library as a Place: Changing in Learning Patterns, Collections, Technology and Use,” in Library as a Space: Rethinking Roles, Rethinking Place, 3.
     </p><p>
@@ -212,7 +212,7 @@
     </p><p>
       24 If you ignore the sauces, of course.
     </p><p>
-      25 <a target="_blank" href="https://www.washingtonpost.com/food/2022/02/08/mcdonalds-menu-hacks-review/">link</a>
+      25 <a target="_blank" rel=”noreferrer” href="https://www.washingtonpost.com/food/2022/02/08/mcdonalds-menu-hacks-review/">link</a>
     </p>
   </div>
 
@@ -445,7 +445,7 @@
   </p><p>
   35 To hear is different from listening. Listening requires empathetic and intellectual work on the part of the receiver. Hearing often does not.
 </p><p>
-  36 <a target="_blank" href="https://barnard.edu/news/listening-images">link</a>
+  36 <a target="_blank" rel=”noreferrer” href="https://barnard.edu/news/listening-images">link</a>
 </p><p>
   37 I want to share a slightly creepy but fun example. A Japanese YouTuber who combines parts of the Thomas toy trains with other mechanical devices to produce uncanny miniature robots. Check it out: https://www.youtube.com/watch?v=yfkgIxu8jX0 It is important to distinguish this image of the remix with narratives of survivalism and improvisation. For a more canonical example, reference Duchamp.
 </p><p>
@@ -494,12 +494,12 @@
     Washington, D.C: Council on Library and Information Resources, 2005.
   </p><p>
     Freeman, Lisa. “Public Libraries Are Becoming the New Social Safety Net.” Policy Note,
-    September 28, 2017. <a target="_blank" href = "https://www.policynote.ca/public-libraries-are-becoming-the-new-social-safety-net/">link</a>.
+    September 28, 2017. <a target="_blank" rel=”noreferrer” href = "https://www.policynote.ca/public-libraries-are-becoming-the-new-social-safety-net/">link</a>.
   </p><p>
     Harney, Stefano, and Fred Moten. <i>The Undercommons: Fugitive Planning & Black Study. Wivenhoe</i>: Minor Compositions, 2013.
   </p><p>
     Heil, Emily. “Review | McDonald's Mashed-up Menu Hacks Might Be Better Left
-    Unmashed.” The Washington Post. WP Company, February 9, 2022. <a target="_blank" href = "https://www.washingtonpost.com/food/2022/02/08/mcdonalds-menu-hacks-review/">link</a>. .
+    Unmashed.” The Washington Post. WP Company, February 9, 2022. <a target="_blank" rel=”noreferrer” href = "https://www.washingtonpost.com/food/2022/02/08/mcdonalds-menu-hacks-review/">link</a>. .
   </p><p>
     Marshall, Daniel, Kevin P. Murphy, and Zeb Tortorici. “Queering Archives: Historical Unravelings Introduction.” <i>Radical history review</i>, no. 120 (2014): 1–11.
   </p><p>
@@ -509,7 +509,7 @@
   </p><p>
     “Students reading in Farnsworth Room.” Harvard University Archives Repository UAV
     605. Harvard University Archives, Harvard University, Cambridge, MA. Accessed August 23rd, 2022.
-    <a target="_blank" href="http://id.lib.harvard.edu/images/olvwork369125/catalog">link</a>
+    <a target="_blank" rel=”noreferrer” href="http://id.lib.harvard.edu/images/olvwork369125/catalog">link</a>
   </p><p>
     Yapp, Hentyle. Minor China: <i>Method, Materialisms, and the Aesthetic.</i> Durham: Duke University Press, 2021.
   </p>

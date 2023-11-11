@@ -6,10 +6,10 @@
     Massachusetts Institute of Technology
   </p>
 <!--  <div class="img-container">-->
-  <a href="https://architecture.mit.edu/" target="_blank">
+  <a href="https://architecture.mit.edu/" target="_blank" rel=”noreferrer”>
     <img src="../assets/logos/MIT_Arch.png" style="filter: invert(); height: 40px;">
   </a><br>
-  <a href="https://mindhandheart.mit.edu/" target="_blank">
+  <a href="https://mindhandheart.mit.edu/" target="_blank" rel=”noreferrer”>
     <img src="../assets/logos/MHH.png" style="height: 66px;">
   </a>
 <!--  </div>-->
