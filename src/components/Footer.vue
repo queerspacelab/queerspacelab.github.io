@@ -10,17 +10,17 @@
   </div>
   <div class="footer-text" id="footer-right">
     <p>
-      Designed and Developed by <u><a href="https://k--kang.com" target="_blank">Kii Kang</a><br></u>
+      Designed and Developed by <u><a href="https://k--kang.com" target="_blank" rel=”noreferrer”>Kii Kang</a><br></u>
       Designed by <u>Angie Door</u> & <u>Alice Song</u>
     </p>
   </div>
   </div>
 
   <!--  <div class="img-container">-->
-  <a href="https://architecture.mit.edu/" target="_blank">
+  <a href="https://architecture.mit.edu/" target="_blank" rel=”noreferrer”>
     <img src="../assets/logos/MIT_Arch.png" style="filter: invert(); height: 40px;">
   </a><br>
-  <a href="https://mindhandheart.mit.edu/" target="_blank">
+  <a href="https://mindhandheart.mit.edu/" target="_blank" rel=”noreferrer”>
     <img src="../assets/logos/MHH.png" style="height: 66px;">
   </a>
 <!--  </div>-->

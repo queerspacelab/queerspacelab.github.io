@@ -16,7 +16,7 @@ function getIsMobileDevice() {
 }
 
 export const router = new Router({
-  // mode: "history",
+  mode: "history",
   data: () => {
     return {
       isMobileDevice: getIsMobileDevice(),
@@ -28,8 +28,9 @@ export const router = new Router({
       components: {
         default: () => import("@/views/Home.vue"),
         pages: () => {
-            if (!this.isMobileDevice) import("@/views/Pages.vue")
-          },
+            // if (!this.isMobileDevice) import("@/views/Pages.vue")
+            import("@/views/Pages.vue")
+        },
         }
     },
     {
@@ -47,7 +48,7 @@ export const router = new Router({
       }
     }
   ],
-  strict: true,
+  strict: false,
 });
 
 new Vue({

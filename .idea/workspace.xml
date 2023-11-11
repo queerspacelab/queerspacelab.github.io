@@ -7,24 +7,18 @@
     <list default="true" id="c1f3428c-7a1e-4944-b75e-2261a659467b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/chunk-697fb9e4.7ced88f1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/chunk-beea4e94.f65af780.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/chunk-c068b6a0.b517db16.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/app.f41e7dd0.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.f16d5813.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.f16d5813.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-697fb9e4.a60241a2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-697fb9e4.a60241a2.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-beea4e94.818e122c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-beea4e94.818e122c.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-c068b6a0.c00b66d9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-c068b6a0.c00b66d9.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/json/team.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/json/team.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Column.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/json/content.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/json/content.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/json/team.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/json/team.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/json/content.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/json/content.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/About.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/MinorPresence.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/MinorPresence.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Pages.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Pages.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ProjectView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ProjectView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +119,7 @@
       <workItem from="1661533602013" duration="36949000" />
       <workItem from="1661745457556" duration="1803000" />
       <workItem from="1678494292767" duration="39000" />
-      <workItem from="1699741428312" duration="1049000" />
+      <workItem from="1699741428312" duration="4180000" />
     </task>
     <servers />
   </component>

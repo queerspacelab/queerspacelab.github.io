@@ -13,7 +13,9 @@
 <!--      <team v-if="$route.params.page === 'team'"-->
 <!--            :width="layout.fullPageWidth"/>-->
 <!--    </transition>-->
-    <div v-if="!isMobileDevice" class="pages-container">
+<!--    <div v-if="!isMobileDevice" class="pages-container">-->
+      <div class="pages-container">
+
       <transition-group appear
                         name="slide">
         <page v-for="(content,i) in contents"
@@ -96,7 +98,7 @@ export default {
   },
   mounted() {
     // this.isMobileDevice = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
-    if (this.isMobileDevice) console.log('mobile device detected');
+    // if (this.isMobileDevice) console.log('mobile device detected');
 
     this.importData();
 
@@ -123,7 +125,7 @@ export default {
   },
   data() {
     return {
-      isMobileDevice: false,
+      // isMobileDevice: false,
       noOfProjects: '',
       contents: '',
       showProject: this.$route.params.project,
