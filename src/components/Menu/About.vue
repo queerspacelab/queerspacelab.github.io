@@ -45,7 +45,7 @@
     <br><br>
     <span>Research and Media Contact</span><br>
     Aidan Flynn<br>
-    <i>Co-Principal Investigator</i>, Queer Space Lab @ MIT<br>
+    <i>Co-Founder</i>, Queer Space Lab @ MIT<br>
     <span><a href="mailto:aflynn@mit.edu">aflynn@mit.edu</a></span>
   </p>
   <div class="body"></div>
